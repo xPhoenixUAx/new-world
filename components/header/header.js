@@ -1,4 +1,23 @@
-function loadHeader() {
+function applyTranslations(lang) {
+    const elements = document.querySelectorAll('[data-translate-key]');
+    elements.forEach(element => {
+      const key = element.getAttribute('data-translate-key');
+      if (translations[lang] && translations[lang][key]) {
+        element.textContent = translations[lang][key];
+      }
+    });
+  }
+  
+  function getCurrentLanguage() {
+    return localStorage.getItem('language') || 'pl';
+  }
+  
+  function setLanguage(lang) {
+    localStorage.setItem('language', lang);
+    applyTranslations(lang);
+  }
+  
+  function loadHeader() {
     var style = document.createElement('link');
     style.rel = 'stylesheet';
     style.href = 'components/header/header.css';
@@ -30,6 +49,17 @@ function loadHeader() {
           en: { icon: '/src/img/icon/len-usa.svg', alt: 'EN' }
         };
   
+        const currentLang = getCurrentLanguage();
+        langItems.forEach(function (item) {
+          if (item.getAttribute('data-lang') === currentLang) {
+            const selectedLang = item.getAttribute('data-lang');
+            langFlag.src = langData[selectedLang].icon;
+            langFlag.alt = selectedLang.toUpperCase();
+            langText.textContent = selectedLang.toUpperCase();
+          }
+        });
+        applyTranslations(currentLang);
+  
         langToggle.addEventListener('click', function (e) {
           e.stopPropagation();
           langToggle.classList.toggle('active');
@@ -44,6 +74,8 @@ function loadHeader() {
             langText.textContent = selectedLang.toUpperCase();
             langList.classList.remove('active');
             langToggle.classList.remove('active');
+  
+            setLanguage(selectedLang);
           });
         });
   
@@ -59,4 +91,3 @@ function loadHeader() {
   }
   
   document.addEventListener('DOMContentLoaded', loadHeader);
-  
