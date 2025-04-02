@@ -8,6 +8,8 @@ function waitForElement(selector, callback) {
       observer.disconnect(); // Зупиняємо спостереження
       callback();
     }
+    const targetDate = new Date("2025-09-15T00:00:00").getTime(); // Дата, до якої йде відлік
+    startCountdown(targetDate);
   });
 
   observer.observe(document.body, { childList: true, subtree: true });

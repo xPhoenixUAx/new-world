@@ -11,9 +11,9 @@ export function startCountdown(targetDate) {
     const timeLeft = targetDate - now;
 
     if (timeLeft <= 0) {
-      countdownElement.innerHTML = "Час вийшов!";
+      countdownElement.innerHTML = "Czas minął!";
       clearInterval(interval);
-      console.log("⏰ Час вийшов!");
+      console.log("⏰ Czas minął!");
       return;
     }
 
@@ -28,25 +28,25 @@ export function startCountdown(targetDate) {
       <div class="countdown-grid">
         <div class="countdown-item">
           <span class="countdown-number">${days}</span>
-          <span class="countdown-label">Dzień</span>
+          <span class="countdown-label">Dni</span>
         </div>
         <div class="countdown-item">
-          <span class="countdown-number">${
-            hours < 10 ? "0" + hours : hours
-          }</span>
-          <span class="countdown-label">Godzina</span>
+          <span class="countdown-number">${hours
+            .toString()
+            .padStart(2, "0")}</span>
+          <span class="countdown-label">Godziny</span>
         </div>
         <div class="countdown-item">
-          <span class="countdown-number">${
-            minutes < 10 ? "0" + minutes : minutes
-          }</span>
-          <span class="countdown-label">Chwila</span>
+          <span class="countdown-number">${minutes
+            .toString()
+            .padStart(2, "0")}</span>
+          <span class="countdown-label">Minuty</span>
         </div>
         <div class="countdown-item">
-          <span class="countdown-number">${
-            seconds < 10 ? "0" + seconds : seconds
-          }</span>
-          <span class="countdown-label">Chwila</span>
+          <span class="countdown-number">${seconds
+            .toString()
+            .padStart(2, "0")}</span>
+          <span class="countdown-label">Sekundy</span>
         </div>
       </div>
     `;
@@ -55,5 +55,5 @@ export function startCountdown(targetDate) {
   updateCountdown();
   const interval = setInterval(updateCountdown, 1000);
 
-  console.log("🔥 Таймер запущено!");
+  console.log("🔥 Timer uruchomiony!");
 }
