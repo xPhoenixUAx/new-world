@@ -1,0 +1,40 @@
+@import url(https://db.onlinewebfonts.com/c/4cb51508c4d40dca10e0b6904dff4d7e?family=Lifehack);
+@import "modern-normalize";
+/* @import url("./src/css/reset.css");
+@import url("./src/css/header.css");
+@import url("./src/css/counter.css");
+@import url("./src/css/contact.css");
+@import url("./src/css/footer.css");
+@import url("./src/css/testemonials.css");
+@import url("./src/css/main/about.css");
+@import url("./src/css/main/faq.css");
+@import url("./src/css/main/price.css");
+@import url("./src/css/main/services.css");
+@import url("./src/css/second/why.css");
+@import url("./src/css/second/how.css");
+@import url("./src/css/second/try.css"); */
+@import url("./main/hero.css");
+
+@font-face {
+  font-family: "Lifehack";
+  src: url("https://db.onlinewebfonts.com/t/4cb51508c4d40dca10e0b6904dff4d7e.eot");
+  src: url("https://db.onlinewebfonts.com/t/4cb51508c4d40dca10e0b6904dff4d7e.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/4cb51508c4d40dca10e0b6904dff4d7e.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/4cb51508c4d40dca10e0b6904dff4d7e.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/4cb51508c4d40dca10e0b6904dff4d7e.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/4cb51508c4d40dca10e0b6904dff4d7e.svg#Lifehack")
+      format("svg");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --font-family: "Metropolis", sans-serif;
+  --second-family: "Inter", sans-serif;
+  --third-family: "Lifehack", sans-serif;
+}

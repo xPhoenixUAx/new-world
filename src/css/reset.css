@@ -1,0 +1,60 @@
+/* Скидання базових стилів */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Наслідування шрифтів для всіх елементів */
+html {
+  font-size: 100%;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -moz-tab-size: 4;
+  tab-size: 4;
+  font-family: sans-serif;
+}
+
+/* Забираємо стандартні стилі списків */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Нормалізація посилань */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Скидання стилів для зображень */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Очищення кнопок */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+/* Глобальне очищення таблиць */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Вирівнювання елементів форм */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}

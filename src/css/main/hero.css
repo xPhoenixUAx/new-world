@@ -1,0 +1,7 @@
+h1 {
+  font-family: var(--third-family);
+  transform: rotate(340deg);
+  color: black;
+  display: inline-block;
+  transform-origin: center;
+}
