@@ -1,5 +1,4 @@
 function loadPartial(selector, file) {
-  console.log(`🔄 Fetching: ${file}`); // Лог для перевірки шляху до файлу
   fetch(file)
     .then((response) => {
       if (!response.ok)
@@ -7,8 +6,6 @@ function loadPartial(selector, file) {
       return response.text();
     })
     .then((data) => {
-      console.log(`✅ Loaded: ${file}`); // Лог для підтвердження завантаження
-      console.log("📌 Content:", data); // Лог для перевірки отриманого контенту
       document.querySelector(selector).innerHTML = data;
     })
     .catch((error) => console.error(`⚠️ Error loading ${file}:`, error));

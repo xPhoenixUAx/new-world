@@ -34,7 +34,17 @@ html {
   scroll-behavior: smooth;
 }
 :root {
-  --font-family: "Metropolis", sans-serif;
+  --font-family: "Metropolis-Regular", sans-serif;
   --second-family: "Inter", sans-serif;
   --third-family: "Lifehack", sans-serif;
+  --fourth-family: "Metropolis-Regular", sans-serif;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.container {
+  max-width: 1280px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
