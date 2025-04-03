@@ -35,10 +35,9 @@ body {
 p {
   line-height: 1.6;
   max-width: 60ch;
-  
 }
 p {
-  font-size: 20px !important; 
+  font-size: 20px;
 }
 .container {
   width: 100%;
