@@ -127,7 +127,8 @@
     position: absolute;
     top: calc(100% + 0.4em);
     left: 0;
-    border: 1px solid #ddd;
+    background: #fff;
+   
     border-radius: 4px;
     list-style: none;
     padding: 0.5em 0;

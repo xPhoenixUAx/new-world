@@ -6,99 +6,68 @@
     <link rel="stylesheet" href="/src/css/base.css" />
     <link rel="stylesheet" href="/src/css/reset.css" />
     <link rel="stylesheet" href="/src/css/main/hero.css" />
-    <link
-      href="https://db.onlinewebfonts.com/c/c02d97eb2b2899bdb0d87b182a64333d?family=Metropolis-Regular"
-      rel="stylesheet"
-      type="text/css"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <title>New World</title>
   </head>
   <body>
     <main>
-      <section class="hero">
-        <div class="container">
-          <div class="hero__inner">
-            <div class="hero__content">
-              <h1 class="hero__title" data-translate-key="hero_title">
-                <span class="highlight">Zacznij</span> uczyć się języka z
-                profesjonalnym korepetytorem
-                <span class="highlight_2">już</span> dziś!
-              </h1>
-              <p class="hero__subtitle" data-translate-key="hero_subtitle">
-                Indywidualne zajęcia, żywa rozmowa i elastyczne ceny.
-              </p>
-              <div class="hero__buttons">
-                <a
-                  href="#"
-                  class="hero__button hero__button--primary"
-                  data-translate-key="hero_button_free"
-                >
-                  Wypróbuj za darmo
-                </a>
-                <a
-                  href="#"
-                  class="hero__button hero__button--secondary"
-                  data-translate-key="hero_button_plan"
-                >
-                  Wybierz taryfę
-                </a>
-              </div>
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <div class="hero__content">
+                        <h1 class="hero__title" data-translate-key="hero_title">
+                            <span class="highlight" data-translate-key="hero_title_highlight">Zacznij</span> uczyć się języka z profesjonalnym korepetytorem <span class="highlight_2" data-translate-key="hero_title_highlight_2">już dziś!</span>
+                        </h1>
+                        <p class="hero__subtitle" data-translate-key="hero_subtitle">
+                            Indywidualne zajęcia, żywa rozmowa i elastyczne ceny.
+                        </p>
+                        <div class="hero__buttons">
+                            <a href="#" class="hero__button hero__button--primary" data-translate-key="hero_button_free">
+                                Wypróbuj za darmo
+                            </a>
+                            <a href="#" class="hero__button hero__button--secondary" data-translate-key="hero_button_plan">
+                                Wybierz taryfę
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero__image">
+                        <img src="/src/img/desk/hero-img-big.png" alt="Hero Image" data-translate-key="hero_image_alt">
+                    </div>
+                </div>
+                <div class="hero__timer">
+                    <div class="hero__timer-content">
+                        <p class="hero__timer-text" data-translate-key="hero_timer_text">
+                            Do rozpoczęcia kursu <br> pozostało:
+                        </p>
+                        <div class="hero__timer-countdown">
+                            <div class="hero__timer-block">
+                                <span class="hero__timer-value" id="days">150</span>
+                                <span class="hero__timer-label" data-translate-key="hero_timer_days">Dni</span>
+                            </div>
+                            <div class="hero__timer-block">
+                                <span class="hero__timer-value" id="hours">10</span>
+                                <span class="hero__timer-label" data-translate-key="hero_timer_hours">Godzina</span>
+                            </div>
+                            <span class="hero__timer-separator">:</span>
+                            <div class="hero__timer-block">
+                                <span class="hero__timer-value" id="minutes">01</span>
+                                <span class="hero__timer-label" data-translate-key="hero_timer_minutes">Chwila</span>
+                            </div>
+                            <span class="hero__timer-separator">:</span>
+                            <div class="hero__timer-block">
+                                <span class="hero__timer-value" id="seconds">00</span>
+                                <span class="hero__timer-label" data-translate-key="hero_timer_seconds">Chwila</span>
+                            </div>
+                        </div>
+                        <p class="hero__timer-start" data-translate-key="hero_timer_start">
+                            Zaczynamy <br> 1 września 2025 o 00:00
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="hero__image">
-              <img src="/src/img/desk/hero-img-big.png" alt="Hero Image" />
-            </div>
-          </div>
-          <div class="hero__timer">
-            <div class="hero__timer-content">
-              <p class="hero__timer-text" data-translate-key="hero_timer_text">
-                Do rozpoczęcia kursu pozostało:
-              </p>
-              <div class="hero__timer-countdown">
-                <div class="hero__timer-block">
-                  <span class="hero__timer-value" id="days">150</span>
-                  <span
-                    class="hero__timer-label"
-                    data-translate-key="hero_timer_days"
-                    >Dni</span
-                  >
-                </div>
-                <div class="hero__timer-block">
-                  <span class="hero__timer-value" id="hours">10</span>
-                  <span
-                    class="hero__timer-label"
-                    data-translate-key="hero_timer_hours"
-                    >Godzina</span
-                  >
-                </div>
-                <span class="hero__timer-separator">:</span>
-                <div class="hero__timer-block">
-                  <span class="hero__timer-value" id="minutes">01</span>
-                  <span
-                    class="hero__timer-label"
-                    data-translate-key="hero_timer_minutes"
-                    >Chwila</span
-                  >
-                </div>
-                <span class="hero__timer-separator">:</span>
-                <div class="hero__timer-block">
-                  <span class="hero__timer-value" id="seconds">00</span>
-                  <span
-                    class="hero__timer-label"
-                    data-translate-key="hero_timer_seconds"
-                    >Chwila</span
-                  >
-                </div>
-              </div>
-              <p
-                class="hero__timer-start"
-                data-translate-key="hero_timer_start"
-              >
-                Zaczynamy 1 września 2025 o 00:00
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
     </main>
 
     <script src="components/header/header.js"></script>

@@ -8,7 +8,20 @@ const translations = {
       contact: "Kontakt",
       welcome: "Witamy w New World",
       description: "Twoje miejsce na najlepsze usługi i informacje.",
-      learn_more: "Dowiedz się więcej"
+      learn_more: "Dowiedz się więcej",
+      hero_title: "Zacznij uczyć się języka z profesjonalnym korepetytorem już dziś!",
+        hero_title_highlight: "Zacznij",
+        hero_title_highlight_2: "już dziś!",
+        hero_subtitle: "Indywidualne zajęcia, żywa rozmowa i elastyczne ceny.",
+        hero_button_free: "Wypróbuj za darmo",
+        hero_button_plan: "Wybierz taryfę",
+        hero_image_alt: "Hero Image",
+        hero_timer_text: "Do rozpoczęcia kursu<br> pozostało:",
+        hero_timer_days: "Dni",
+        hero_timer_hours: "Godzina",
+        hero_timer_minutes: "Chwila",
+        hero_timer_seconds: "Chwila",
+        hero_timer_start: "Zaczynamy<br>1 września 2025 o 00:00"
     },
     uk: {
       header: "Заголовок",
@@ -19,7 +32,20 @@ const translations = {
       contact: "Контакти",
       welcome: "Ласкаво просимо до New World",
       description: "Ваше місце для найкращих послуг та інформації.",
-      learn_more: "Дізнатися більше"
+      learn_more: "Дізнатися більше",
+      hero_title: "Починай вчити мову з професійним репетитором вже сьогодні!",
+        hero_title_highlight: "Починай",
+        hero_title_highlight_2: "вже сьогодні!",
+        hero_subtitle: "Індивідуальні заняття, жива розмова та гнучкі ціни.",
+        hero_button_free: "Спробуй безкоштовно",
+        hero_button_plan: "Обери тариф",
+        hero_image_alt: "Зображення героя",
+        hero_timer_text: "До початку курсу <br>залишилося:",
+        hero_timer_days: "Дні",
+        hero_timer_hours: "Години",
+        hero_timer_minutes: "Хвилини",
+        hero_timer_seconds: "Секунди",
+        hero_timer_start: "Починаємо<br>1 вересня 2025 о 00:00"
     },
     ru: {
       header: "Заголовок",
@@ -30,7 +56,20 @@ const translations = {
       contact: "Контакты",
       welcome: "Добро пожаловать в New World",
       description: "Ваше место для лучших услуг и информации.",
-      learn_more: "Узнать больше"
+      learn_more: "Узнать больше",
+      hero_title: "Начинай учить язык с профессиональным репетитором уже сегодня!",
+        hero_title_highlight: "Начинай",
+        hero_title_highlight_2: "уже сегодня!",
+        hero_subtitle: "Индивидуальные занятия, живая беседа и гибкие цены.",
+        hero_button_free: "Попробуй бесплатно",
+        hero_button_plan: "Выбери тариф",
+        hero_image_alt: "Изображение героя",
+        hero_timer_text: "До начала курса <br>осталось:",
+        hero_timer_days: "Дни",
+        hero_timer_hours: "Часы",
+        hero_timer_minutes: "Минуты",
+        hero_timer_seconds: "Секунды",
+        hero_timer_start: "Начинаем<br>1 сентября 2025 в 00:00"
     },
     en: {
       header: "Header",
@@ -41,6 +80,19 @@ const translations = {
       contact: "Contact",
       welcome: "Welcome to New World",
       description: "Your place for the best services and information.",
-      learn_more: "Learn More"
+      learn_more: "Learn More",
+      hero_title: "Start learning a language with a professional tutor today!",
+        hero_title_highlight: "Start",
+        hero_title_highlight_2: "today!",
+        hero_subtitle: "Individual lessons, live conversation, and flexible pricing.",
+        hero_button_free: "Try for free",
+        hero_button_plan: "Choose a plan",
+        hero_image_alt: "Hero Image",
+        hero_timer_text: "Time left until the course<br> starts:",
+        hero_timer_days: "Days",
+        hero_timer_hours: "Hours",
+        hero_timer_minutes: "Minutes",
+        hero_timer_seconds: "Seconds",
+        hero_timer_start: "We start on<br>September 1, 2025 at 00:00"
     }
   };
