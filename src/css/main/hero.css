@@ -118,7 +118,7 @@
 .hero__timer {
   background-color: #ffd400;
   padding: clamp(15px, 2vw, 20px);
-  border-radius: 10px;
+  border-radius: 30px;
   text-align: center;
   width: 100%;
   margin-top: 40px;
@@ -182,7 +182,7 @@
   font-family: 'Metropolis', sans-serif;
   font-size: clamp(14px, 1.2vw, 16px);
   font-weight: 300;
-  max-width: 200px;
+
   text-align: right;
 }
 

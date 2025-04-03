@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="/src/css/base.css" />
     <link rel="stylesheet" href="/src/css/reset.css" />
     <link rel="stylesheet" href="/src/css/main/hero.css" />
+    <link rel="stylesheet" href="/src/css/main/lessons.css" />
+    <link rel="stylesheet" href="/src/css/main/about.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -17,12 +19,18 @@
             <div class="container">
                 <div class="hero__inner">
                     <div class="hero__content">
-                        <h1 class="hero__title" data-translate-key="hero_title">
-                            <span class="highlight" data-translate-key="hero_title_highlight">Zacznij</span> uczyć się języka z profesjonalnym korepetytorem <span class="highlight_2" data-translate-key="hero_title_highlight_2">już dziś!</span>
+                       
+                        <h1 class="hero__title">
+                          
+                            <span class="highlight" data-translate-key="hero_title_highlight">Zacznij</span>
+                            <span data-translate-key="hero_title_middle"> uczyć się języka z profesjonalnym korepetytorem </span>
+                            <span class="highlight_2" data-translate-key="hero_title_highlight_2">już dziś!</span>
                         </h1>
+        
                         <p class="hero__subtitle" data-translate-key="hero_subtitle">
                             Indywidualne zajęcia, żywa rozmowa i elastyczne ceny.
                         </p>
+        
                         <div class="hero__buttons">
                             <a href="#" class="hero__button hero__button--primary" data-translate-key="hero_button_free">
                                 Wypróbuj za darmo
@@ -68,11 +76,222 @@
                 </div>
             </div>
         </section>
+        
+
+
+
+
+
+        <section class="lessons">
+            <div class="container">
+                <h2 class="lessons__title" data-translate-key="lessons_title">Chcesz swobodnie mówić po angielsku? Nasz zespół oferuje komfortowe i skuteczne zajęcia dla wszystkich poziomów.</h2>
+                <p class="lessons__subtitle" data-translate-key="lessons_subtitle">Wybierz dogodny format:</p>
+                <div class="lessons__row lessons__row--two">
+                    <div class="lessons__item lessons__item--yellow" data-modal="modal-1">
+                        <div class="lessons__header">
+                            <h3 class="lessons__header-title" data-translate-key="lessons_card_online_title">Indywidualne i grupowe lekcje z lektorem online</h3>
+                            <span class="lessons__arrow"></span>
+                        </div>
+                    </div>
+                    <div class="lessons__image-wrapper">
+                        <img src="/src/img/desk/services/1.png" alt="Online Lessons" class="lessons__image" data-translate-key="lessons_card_online_image_alt">
+                    </div>
+                </div>
+                <div class="lessons__row lessons__row--three">
+                    <div class="lessons__image-wrapper">
+                        <img src="/src/img/desk/services/2.png" alt="Stationary Lessons 1" class="lessons__image" data-translate-key="lessons_card_stationary_image_alt_1">
+                    </div>
+                    <div class="lessons__item lessons__item--purple" data-modal="modal-2">
+                        <div class="lessons__header">
+                            <h3 class="lessons__header-title" data-translate-key="lessons_card_stationary_title_1">Zajęcia grupowe stacjonarne</h3>
+                            <span class="lessons__arrow"></span>
+                        </div>
+                    </div>
+                    <div class="lessons__image-wrapper">
+                        <img src="/src/img/desk/services/3.png" alt="Stationary Lessons 2" class="lessons__image" data-translate-key="lessons_card_stationary_image_alt_2">
+                    </div>
+                </div>
+                <div class="lessons__row lessons__row--two">
+                    <div class="lessons__image-wrapper">
+                        <img src="/src/img/desk/services/4.png" alt="Office Lessons" class="lessons__image" data-translate-key="lessons_card_office_image_alt">
+                    </div>
+                    <div class="lessons__item lessons__item--yellow" data-modal="modal-3">
+                        <div class="lessons__header">
+                            <h3 class="lessons__header-title" data-translate-key="lessons_card_office_title">Korporacyjne angielski z dojazdem lektora do biura</h3>
+                            <span class="lessons__arrow"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="modal" id="modal-1">
+                <div class="modal__content modal__content--yellow">
+                    <span class="modal__close">×</span>
+                    <h3 class="modal__title" data-translate-key="lessons_card_online_title">Indywidualne i grupowe lekcje z lektorem online</h3>
+                    <p class="modal__description" data-translate-key="lessons_card_online_subtitle">Nasze zajęcia online z doświadczonym nauczycielem pomogą Ci szybko opanować język angielski w wygodnym formacie.</p>
+                    <div class="modal__inner">
+                        <div class="modal__text">
+                            <ul class="modal__list">
+                                <li data-translate-key="lessons_card_online_item_1">Indywidualne lekcje – spersonalizowany program nauki dopasowany do Twoich celów, elastyczny harmonogram.</li>
+                                <li data-translate-key="lessons_card_online_item_2">Zajęcia grupowe – interaktywna nauka w małych grupach, żywa komunikacja i wsparcie zespołu.</li>
+                                <li data-translate-key="lessons_card_online_item_3">Wszystkie zajęcia odbywają się online, z wykorzystaniem nowoczesnych metod, interaktywnych materiałów i praktyki konwersacyjnej. Wybierz dogodny format i zacznij naukę już dziś!</li>
+                            </ul>
+                        </div>
+                        <div class="modal__image-wrapper">
+                            <img src="/src/img/desk/services/modal1.png" alt="Online Lessons" class="modal__image" data-translate-key="lessons_card_online_modal_image_alt">
+                        </div>
+                    </div>
+                    <button class="modal__button" data-form="form-modal" data-translate-key="modal_button_sign_up">Zapisz się</button>
+                </div>
+            </div>
+        
+            <div class="modal" id="modal-2">
+                <div class="modal__content modal__content--purple">
+                    <span class="modal__close">×</span>
+                    <h3 class="modal__title" data-translate-key="lessons_card_stationary_title_1">Zajęcia grupowe stacjonarne</h3>
+                    <p class="modal__description" data-translate-key="lessons_card_stationary_subtitle_1">Zanurz się w naukę angielskiego w komfortowej atmosferze!</p>
+                    <div class="modal__inner">
+                        <div class="modal__text">
+                            <ul class="modal__list">
+                                <li data-translate-key="lessons_card_stationary_item_1_1">Nauka w małych grupach – żywa komunikacja, wsparcie i motywacja.</li>
+                                <li data-translate-key="lessons_card_stationary_item_1_2">Dostosowane materiały – nowoczesne metody interaktywnej nauki.</li>
+                                <li data-translate-key="lessons_card_stationary_item_1_3">Praktyka w czasie rzeczywistym – rozwijanie umiejętności konwersacyjnych w przyjaznej atmosferze.</li>
+                                <li data-translate-key="lessons_card_stationary_item_1_4">Zajęcia odbywają się w wygodnych salach lekcyjnych, gdzie możesz efektywnie się uczyć i swobodnie komunikować po angielsku bez stresu. Dołącz, rozwijaj swoje umiejętności razem z innymi!</li>
+                            </ul>
+                        </div>
+                        <div class="modal__image-wrapper">
+                            <img src="/src/img/desk/services/modal2.png" alt="Stationary Lessons" class="modal__image" data-translate-key="lessons_card_stationary_modal_image_alt">
+                        </div>
+                    </div>
+                    <button class="modal__button" data-form="form-modal" data-translate-key="modal_button_sign_up">Zapisz się</button>
+                </div>
+            </div>
+        
+            <div class="modal" id="modal-3">
+                <div class="modal__content modal__content--yellow">
+                    <span class="modal__close">×</span>
+                    <h3 class="modal__title" data-translate-key="lessons_card_office_title">Korporacyjne angielski z dojazdem lektora do biura</h3>
+                    <p class="modal__description" data-translate-key="lessons_card_office_subtitle">Oferta dla firm, które chcą rozwijać umiejętności językowe swoich pracowników bez pośredników w biurze!</p>
+                    <div class="modal__inner">
+                        <div class="modal__text">
+                            <ul class="modal__list">
+                                <li data-translate-key="lessons_card_office_item_1">Lekcje w Twoim biurze – wygodny format nauki bez konieczności wychodzenia z procesu pracy.</li>
+                                <li data-translate-key="lessons_card_office_item_2">Indywidualne podejście – zajęcia dopasowane do potrzeb i poziomu pracowników Twojej firmy.</li>
+                                <li data-translate-key="lessons_card_office_item_3">Elastyczny harmonogram – możliwość zorganizowania zajęć w dogodnym czasie dla zespołu.</li>
+                                <li data-translate-key="lessons_card_office_item_4">Nasi nauczyciele przyjadą do Twojego biura, zapewniając komfortową i efektywną naukę języka angielskiego dla Twojego zespołu.</li>
+                            </ul>
+                        </div>
+                        <div class="modal__image-wrapper">
+                            <img src="/src/img/desk/services/modal3.png" alt="Office Lessons" class="modal__image" data-translate-key="lessons_card_office_modal_image_alt">
+                        </div>
+                    </div>
+                    <button class="modal__button" data-form="form-modal" data-translate-key="modal_button_sign_up">Zapisz się</button>
+                </div>
+            </div>
+        
+            <div class="modal" id="form-modal">
+                <div class="modal__content modal__content--yellow">
+                    <span class="modal__close">×</span>
+                    <h3 class="modal__title" data-translate-key="form_title">Форма записи</h3>
+                    <form class="modal__form" action="send-mail.php" method="POST">
+                        <label class="modal__label">
+                            <input type="text" name="name" placeholder="Imię" required data-translate-key="form_name_placeholder">
+                        </label>
+                        <label class="modal__label">
+                            <input type="tel" name="phone" placeholder="Telefon" required data-translate-key="form_phone_placeholder">
+                        </label>
+                        <label class="modal__label">
+                            <input type="email" name="email" placeholder="E-mail" required data-translate-key="form_email_placeholder">
+                        </label>
+                        <p class="modal__form-note" data-translate-key="form_note">Wypełniając formularz i przesyłając swoje dane, wyrażasz zgodę na ich przetwarzanie zgodnie z Polityką Prywatności.</p>
+                        <button type="submit" class="modal__button" data-translate-key="form_submit_button">Wyślij</button>
+                    </form>
+                </div>
+            </div>
+        
+            <div class="modal" id="success-modal">
+                <div class="modal__content modal__content--yellow">
+                    <span class="modal__success-icon">✔</span>
+                    <h3 class="modal__title" data-translate-key="success_message">Dziękujemy za zgłoszenie!</h3>
+                    <p class="modal__description" data-translate-key="success_description">Nasz specjalista skontaktuje się z Tobą w najbliższym czasie.</p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="about">
+            <div class="container">
+                <div class="about-wrap">
+                    <div class="head-block">
+                        <div class="img-block">
+                            <picture>
+                                <source
+                                    media="(max-width: 768px)"
+                                    srcset="/src/img/mobile/why/girl-why.png"
+                                />
+                                <source
+                                    media="(min-width: 769px)"
+                                    srcset="/src/img/desk/why/Img.png"
+                                />
+                                <img src="default-image.jpg" alt="Why Us Image" data-translate-key="about_image_alt" />
+                            </picture>
+                        </div>
+                        <div class="head-text-cont">
+                            <h2 class="about-heading" data-translate-key="about_title">
+                                Dlaczego właśnie my?
+                            </h2>
+                            <p class="about-text" data-translate-key="about_description">
+                                Indywidualne podejście do każdego ucznia – Twoja szybka droga do swobodnego angielskiego!
+                            </p>
+                            <a href="#" class="about-btn" data-translate-key="about_button">
+                                Wypróbuj za darmo
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="about-list">
+                        <li class="about-item about-item-1">
+                            <h3 class="item-head" data-translate-key="about_card_1_title">
+                                Tylko wykwalifikowani nauczyciele i native speakerzy
+                            </h3>
+                            <p class="item-text" data-translate-key="about_card_1_description">
+                                Doświadczeni nauczyciele i native speakerzy pomogą Ci mówić pewnie i poprawnie!
+                            </p>
+                        </li>
+                        <li class="about-item about-item-2">
+                            <h3 class="item-head" data-translate-key="about_card_2_title">
+                                Wygodna forma zajęć online
+                            </h3>
+                            <p class="item-text" data-translate-key="about_card_2_description">
+                                Ucz się w dowolnym czasie i w dogodnym dla Ciebie miejscu dzięki naszemu formatowi online.
+                            </p>
+                        </li>
+                        <li class="about-item about-item-3">
+                            <h3 class="item-head" data-translate-key="about_card_3_title">
+                                Elastyczny harmonogram i przystępne ceny
+                            </h3>
+                            <p class="item-text" data-translate-key="about_card_3_description">
+                                Wybierz dogodne godziny zajęć i ciesz się wysoką jakością nauki w przystępnej cenie.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+          
+          
+          
+
+
     </main>
 
     <script src="components/header/header.js"></script>
 
     <script src="/src/js/translations.js"></script>
     <script src="/src/js/hero.js"></script>
+    <script src="/src/js/lessons.js"></script>
   </body>
 </html>

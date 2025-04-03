@@ -35,8 +35,11 @@ body {
 p {
   line-height: 1.6;
   max-width: 60ch;
+  
 }
-
+p {
+  font-size: 20px !important; 
+}
 .container {
   width: 100%;
   max-width: 1440px;
