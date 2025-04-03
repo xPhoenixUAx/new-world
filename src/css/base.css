@@ -1,26 +1,49 @@
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
-    line-height: 1.2;
-  }
-  
-  p {
-    line-height: 1.6;
-    max-width: 60ch;
-  }
+@import url(https://db.onlinewebfonts.com/c/4cb51508c4d40dca10e0b6904dff4d7e?family=Lifehack);
+@font-face {
+  font-family: "Lifehack";
+  src: url("https://db.onlinewebfonts.com/t/4cb51508c4d40dca10e0b6904dff4d7e.eot");
+  src: url("https://db.onlinewebfonts.com/t/4cb51508c4d40dca10e0b6904dff4d7e.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/4cb51508c4d40dca10e0b6904dff4d7e.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/4cb51508c4d40dca10e0b6904dff4d7e.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/4cb51508c4d40dca10e0b6904dff4d7e.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/4cb51508c4d40dca10e0b6904dff4d7e.svg#Lifehack")
+      format("svg");
+}
 
-  
+:root {
+  --font-family: "Metropolis-Regular", sans-serif;
+  --second-family: "Inter", sans-serif;
+  --third-family: "Lifehack", sans-serif;
+  --fourth-family: "Metropolis-Regular", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+body {
+  font-family: var(--font-family);
+}
+p {
+  line-height: 1.6;
+  max-width: 60ch;
+}
 
-  .container {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 16px;
-    margin: 0 auto;
-  }
-  
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
 
-
-
-  button {
-    cursor: pointer;
-  }
-  
+button {
+  cursor: pointer;
+}
