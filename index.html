@@ -5,16 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/src/css/base.css">
   <link rel="stylesheet" href="/src/css/reset.css">
+  <link rel="stylesheet" href="/src/css/main/hero.css">
   <title>New World</title>
 </head>
 <body>
   
+<main>
 
+  <section class="hero">
+    <div class="container">
+        <div class="hero__inner">
+            <div class="hero__content">
+                <h1 class="hero__title" data-translate-key="hero_title">
+                    <span class="highlight">Zacznij</span> uczyć się języka z profesjonalnym korepetytorem <span class="highlight_2">już</span> dziś!
+                </h1>
+                <p class="hero__subtitle" data-translate-key="hero_subtitle">
+                    Indywidualne zajęcia, żywa rozmowa i elastyczne ceny.
+                </p>
+                <div class="hero__buttons">
+                    <a href="#" class="hero__button hero__button--primary" data-translate-key="hero_button_free">
+                        Wypróbuj za darmo
+                    </a>
+                    <a href="#" class="hero__button hero__button--secondary" data-translate-key="hero_button_plan">
+                        Wybierz taryfę
+                    </a>
+                </div>
+            </div>
+            <div class="hero__image">
+                <img src="/src/img/desk/hero-img-big.png" alt="Hero Image">
+            </div>
+        </div>
+        <div class="hero__timer">
+            <p class="hero__timer-text" data-translate-key="hero_timer_text">
+                Do rozpoczęcia kursu pozostało:
+            </p>
+            <div class="hero__timer-countdown">
+                <span class="hero__timer-value" id="days">160</span> Dni
+                <span class="hero__timer-value" id="hours">07</span>:<span class="hero__timer-value" id="minutes">33</span>:<span class="hero__timer-value" id="seconds">40</span>
+            </div>
+            <p class="hero__timer-start" data-translate-key="hero_timer_start">
+                Zaczynamy 1 września 2025 o 00:00
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+</main>
 
 
 
   <script src="components/header/header.js"></script>
 
   <script src="/src/js/translations.js"></script>
+  <script src="/src/js/hero.js"></script>
 </body>
 </html>
