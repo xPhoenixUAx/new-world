@@ -1,22 +1,13 @@
-
 .hero {
   position: relative;
   color: #000;
   overflow: hidden;
   width: 100%;
-  
-}
-
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
 .hero__inner {
   display: flex;
-  background: url('/src/img/desk/hero-bg-big.png') no-repeat center/cover;
+  background: url("/src/img/desk/hero-bg-big.png") no-repeat center/cover;
   justify-content: space-between;
   align-items: center;
   position: relative;
@@ -133,7 +124,7 @@
 }
 
 .hero__timer-text {
-  font-family: 'Metropolis', sans-serif;
+  font-family: "Metropolis", sans-serif;
   font-size: clamp(16px, 1.5vw, 18px);
   font-weight: 700;
   text-align: left;
@@ -153,21 +144,21 @@
 }
 
 .hero__timer-value {
-  font-family: 'Metropolis', sans-serif;
+  font-family: "Metropolis", sans-serif;
   font-size: clamp(24px, 3vw, 36px);
   font-weight: 700;
   line-height: 1;
 }
 
 .hero__timer-label {
-  font-family: 'Metropolis', sans-serif;
+  font-family: "Metropolis", sans-serif;
   font-size: clamp(12px, 1vw, 14px);
   font-weight: 300;
   margin-top: 5px;
 }
 
 .hero__timer-separator {
-  font-family: 'Metropolis', sans-serif;
+  font-family: "Metropolis", sans-serif;
   font-size: clamp(24px, 3vw, 36px);
   font-weight: 700;
   line-height: 1;
@@ -179,7 +170,7 @@
 }
 
 .hero__timer-start {
-  font-family: 'Metropolis', sans-serif;
+  font-family: "Metropolis", sans-serif;
   font-size: clamp(14px, 1.2vw, 16px);
   font-weight: 300;
 
@@ -187,125 +178,123 @@
 }
 
 @media (max-width: 768px) {
- 
-
   .hero__inner {
-      flex-direction: column;
-      text-align: center;
-      padding: 20px;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
   }
 
   .hero__content {
-      max-width: 100%;
+    max-width: 100%;
   }
 
   .hero__title {
-      font-size: clamp(28px, 4vw, 36px);
+    font-size: clamp(28px, 4vw, 36px);
   }
 
   .hero__subtitle {
-      font-size: clamp(16px, 2vw, 18px);
+    font-size: clamp(16px, 2vw, 18px);
   }
 
   .hero__buttons {
-      flex-direction: column;
-      gap: 15px;
+    flex-direction: column;
+    gap: 15px;
   }
 
   .hero__button {
-      padding: clamp(10px, 1.5vw, 15px) clamp(20px, 3vw, 30px);
-      font-size: 16px;
-      width: 100%;
+    padding: clamp(10px, 1.5vw, 15px) clamp(20px, 3vw, 30px);
+    font-size: 16px;
+    width: 100%;
   }
 
   .hero__image {
-      max-width: 80%;
-      margin: 20px auto;
+    max-width: 80%;
+    margin: 20px auto;
   }
 
   .hero__timer {
-      padding: 15px;
-      margin-top: 20px;
+    padding: 15px;
+    margin-top: 20px;
   }
 
   .hero__timer-content {
-      flex-direction: column;
-      gap: 10px;
-      padding: 0 20px;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 20px;
   }
 
   .hero__timer-text {
-      font-size: clamp(14px, 1.5vw, 16px);
-      max-width: 100%;
-      text-align: center;
+    font-size: clamp(14px, 1.5vw, 16px);
+    max-width: 100%;
+    text-align: center;
   }
 
   .hero__timer-countdown {
-      gap: 5px;
+    gap: 5px;
   }
 
   .hero__timer-value {
-      font-size: clamp(20px, 3vw, 24px);
+    font-size: clamp(20px, 3vw, 24px);
   }
 
   .hero__timer-separator {
-      font-size: clamp(20px, 3vw, 24px);
-      height: clamp(20px, 3vw, 24px);
-      margin-bottom: 15px;
+    font-size: clamp(20px, 3vw, 24px);
+    height: clamp(20px, 3vw, 24px);
+    margin-bottom: 15px;
   }
 
   .hero__timer-start {
-      font-size: clamp(12px, 1.2vw, 14px);
-      max-width: 100%;
-      text-align: center;
+    font-size: clamp(12px, 1.2vw, 14px);
+    max-width: 100%;
+    text-align: center;
   }
 
   .hero__timer-label {
-      font-size: clamp(10px, 1vw, 12px);
+    font-size: clamp(10px, 1vw, 12px);
   }
 }
 
 @media (max-width: 480px) {
   .hero__title {
-      font-size: clamp(24px, 4vw, 28px);
+    font-size: clamp(24px, 4vw, 28px);
   }
 
   .hero__subtitle {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .hero__button {
-      padding: clamp(8px, 1.5vw, 12px) clamp(15px, 3vw, 20px);
-      font-size: 14px;
+    padding: clamp(8px, 1.5vw, 12px) clamp(15px, 3vw, 20px);
+    font-size: 14px;
   }
 
   .hero__image {
-      max-width: 100%;
+    max-width: 100%;
   }
 
   .hero__timer-text {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .hero__timer-countdown {
-      gap: 3px;
+    gap: 3px;
   }
 
   .hero__timer-value {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .hero__timer-separator {
-      font-size: 20px;
-      height: 20px;
-      margin-bottom: 10px;
+    font-size: 20px;
+    height: 20px;
+    margin-bottom: 10px;
   }
 
   .hero__timer-start {
-      font-size: 12px;
+    font-size: 12px;
   }
 
   .hero__timer-label {
-      font-size: 10px;
+    font-size: 10px;
   }
 }
