@@ -2,6 +2,8 @@
   background-image: url("/src/img/desk/books.png");
   background-repeat: no-repeat;
   background-position: right;
+  padding-top: 155px;
+  padding-bottom: 90px;
 }
 .price-heading {
   font-family: var(--second-family);
