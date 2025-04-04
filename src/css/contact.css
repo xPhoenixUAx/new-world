@@ -3,40 +3,43 @@
   --text-color: #000;
   --button-color: #000;
   --button-text: #fff;
-  --border-radius-large: 50px;
-  --border-radius-medium: 30px;
-  --spacing-sm: 15px;
-  --spacing-md: 20px;
-  --spacing-lg: 30px;
+  --border-radius-large: 35px; /* Reduced from 50px by 30% */
+  --border-radius-medium: 21px; /* Reduced from 30px by 30% */
+  --spacing-sm: 10.5px; /* Reduced from 15px by 30% */
+  --spacing-md: 14px; /* Reduced from 20px by 30% */
+  --spacing-lg: 21px; /* Reduced from 30px by 30% */
 }
 
 .contact {
   background: url("../img/desk/girl.png") no-repeat right center;
   background-size: contain;
   padding: var(--spacing-lg) 0;
+  display: flex; /* Added for centering */
+  justify-content: center; /* Center the wrap horizontally */
 }
 
 .wrap {
   border-radius: var(--border-radius-large);
   width: 100%;
-  max-width: 1440px;
+  max-width: 1008px; /* Reduced from 1440px by 30% */
   box-shadow: 1px 3px 6px 0 rgba(0, 0, 0, 0.25);
   background: var(--primary-color);
   display: flex;
   justify-content: space-between;
   position: relative;
   overflow: hidden;
+  margin: 0 auto; /* Center the wrap container */
 }
 
 .left-block {
-  padding: 82px 0 0 90px;
+  padding: 57.4px 0 0 63px; /* Reduced from 82px 0 0 90px by 30% */
   width: 30%;
 }
 
 .left-text {
   font-family: var(--font-family);
   font-weight: 700;
-  font-size: 63px;
+  font-size: 44.1px; /* Reduced from 63px by 30% */
   line-height: 127%;
   color: var(--text-color);
 }
@@ -59,7 +62,7 @@
 
 .right-block {
   width: 40%;
-  padding: 60px 78px 60px 0;
+  padding: 42px 54.6px 42px 0; /* Reduced from 60px 78px 60px 0 by 30% */
   text-align: center;
   z-index: 2;
 }
@@ -67,7 +70,7 @@
 .right-head {
   font-family: var(--font-family);
   font-weight: 700;
-  font-size: 30px;
+  font-size: 21px; /* Reduced from 30px by 30% */
   line-height: 133%;
   color: var(--text-color);
   margin-bottom: var(--spacing-md);
@@ -76,7 +79,7 @@
 .right-text {
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 20px;
+  font-size: 14px; /* Reduced from 20px by 30% */
   line-height: 150%;
   text-align: center;
   color: var(--text-color);
@@ -87,7 +90,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--spacing-sm);
-  max-width: 400px;
+  max-width: 280px; /* Reduced from 400px by 30% */
   margin: 0 auto;
 }
 
@@ -97,10 +100,10 @@
 
 .sr-only {
   position: absolute;
-  width: 1px;
-  height: 1px;
+  width: 0.7px; /* Reduced from 1px by 30% */
+  height: 0.7px; /* Reduced from 1px by 30% */
   padding: 0;
-  margin: -1px;
+  margin: -0.7px; /* Reduced from -1px by 30% */
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
@@ -109,18 +112,18 @@
 
 .modal__label input {
   width: 100%;
-  padding: 15px 30px;
+  padding: 10.5px 21px; /* Reduced from 15px 30px by 30% */
   border: none;
   border-radius: var(--border-radius-large);
   font-family: var(--font-family, sans-serif);
-  font-size: 16px;
+  font-size: 11.2px; /* Reduced from 16px by 30% */
   background-color: #fff;
 }
 
 .modal__label input::placeholder {
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 11.2px; /* Reduced from 16px by 30% */
   line-height: 156%;
   color: rgba(0, 0, 0, 0.7);
 }
@@ -129,15 +132,15 @@
   background-color: var(--button-color);
   color: var(--button-text);
   border: none;
-  padding: 20px;
+  padding: 14px; /* Reduced from 20px by 30% */
   border-radius: var(--border-radius-large);
   cursor: pointer;
   font-family: var(--font-family, sans-serif);
-  font-size: 26px;
+  font-size: 18.2px; /* Reduced from 26px by 30% */
   font-weight: 700;
   width: 100%;
-  max-width: 340px;
-  height: 75px;
+  max-width: 238px; /* Reduced from 340px by 30% */
+  height: 52.5px; /* Reduced from 75px by 30% */
   margin: var(--spacing-md) auto 0;
   display: flex;
   align-items: center;
@@ -152,28 +155,28 @@
 /* Tablet styles */
 @media (max-width: 1024px) {
   .left-block {
-    padding: 60px 0 0 40px;
+    padding: 42px 0 0 28px; /* Reduced from 60px 0 0 40px by 30% */
   }
 
   .left-text {
-    font-size: 48px;
+    font-size: 33.6px; /* Reduced from 48px by 30% */
   }
 
   .right-block {
-    padding: 40px 40px 40px 0;
+    padding: 28px 28px 28px 0; /* Reduced from 40px 40px 40px 0 by 30% */
   }
 
   .right-head {
-    font-size: 26px;
+    font-size: 18.2px; /* Reduced from 26px by 30% */
   }
 
   .right-text {
-    font-size: 18px;
+    font-size: 12.6px; /* Reduced from 18px by 30% */
   }
 
   .modal__button {
-    font-size: 22px;
-    height: 65px;
+    font-size: 15.4px; /* Reduced from 22px by 30% */
+    height: 45.5px; /* Reduced from 65px by 30% */
   }
 }
 
@@ -184,14 +187,15 @@
     align-items: center;
     padding: var(--spacing-lg) var(--spacing-md);
     border-radius: var(--border-radius-medium);
+    margin: 0 auto; /* Ensure centering in mobile view */
   }
   .left-wrap {
     flex-direction: column-reverse;
   }
   .contact-img {
-    margin-bottom: -80px;
-    width: 329px;
-    height: 410px;
+    margin-bottom: -56px; /* Reduced from -80px by 30% */
+    width: 230.3px; /* Reduced from 329px by 30% */
+    height: 287px; /* Reduced from 410px by 30% */
   }
   .left-block {
     width: 100%;
@@ -201,7 +205,7 @@
   }
 
   .left-text {
-    font-size: 40px;
+    font-size: 28px; /* Reduced from 40px by 30% */
     line-height: 1.3;
     text-align: left;
   }
@@ -220,18 +224,18 @@
   }
 
   .right-head {
-    font-size: 24px;
+    font-size: 16.8px; /* Reduced from 24px by 30% */
   }
 
   .right-text {
-    font-size: 16px;
+    font-size: 11.2px; /* Reduced from 16px by 30% */
     margin-bottom: var(--spacing-md);
   }
 
   .modal__button {
-    max-width: 280px;
-    height: 60px;
-    font-size: 18px;
+    max-width: 196px; /* Reduced from 280px by 30% */
+    height: 42px; /* Reduced from 60px by 30% */
+    font-size: 12.6px; /* Reduced from 18px by 30% */
   }
 
   .contact {
@@ -243,23 +247,23 @@
 /* Small mobile styles */
 @media (max-width: 480px) {
   .left-text {
-    font-size: 28px;
+    font-size: 19.6px; /* Reduced from 28px by 30% */
   }
 
   .right-head {
-    font-size: 20px;
+    font-size: 14px; /* Reduced from 20px by 30% */
   }
 
   .right-text {
-    font-size: 14px;
+    font-size: 9.8px; /* Reduced from 14px by 30% */
   }
 
   .modal__label input {
-    padding: 12px 20px;
+    padding: 8.4px 14px; /* Reduced from 12px 20px by 30% */
   }
 
   .modal__button {
-    height: 50px;
-    font-size: 16px;
+    height: 35px; /* Reduced from 50px by 30% */
+    font-size: 11.2px; /* Reduced from 16px by 30% */
   }
 }
