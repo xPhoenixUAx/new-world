@@ -16,13 +16,6 @@
   padding: var(--spacing-lg) 0;
 }
 
-.container {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 var(--spacing-md);
-}
-
 .wrap {
   border-radius: var(--border-radius-large);
   width: 100%;
