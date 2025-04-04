@@ -138,7 +138,7 @@
 
 @media (max-width: 768px) {
   .price-section {
-    background-image: none;
+    background-image: url("/src/img/desk/books.png");
   }
 
   .price-heading {
