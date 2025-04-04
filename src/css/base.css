@@ -19,6 +19,25 @@
   --second-family: "Inter", sans-serif;
   --third-family: "Lifehack", sans-serif;
   --fourth-family: "Inter", sans-serif;
+  /* font-size */
+  --font-size-12: 12px;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-18: 18px;
+  --font-size-20: 20px;
+  --font-size-22: 22px;
+  --font-size-25: 25px;
+  --font-size-26: 26px;
+  --font-size-28: 28px;
+  --font-size-30: 30px;
+  --font-size-34: 34px;
+  --font-size-37: 37px;
+  --font-size-40: 40px;
+  --font-size-42: 42px;
+  --font-size-51: 51px;
+  --font-size-63: 63px;
+  --font-size-67: 67px;
+  --font-size-70: 70px;
 }
 h1,
 h2,
