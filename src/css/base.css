@@ -51,16 +51,11 @@ h6 {
 body {
   font-family: var(--font-family);
 }
-p {
-  line-height: 1.6;
-  max-width: 60ch;
-}
-p {
-  font-size: 20px;
-}
+
+
 .container {
   width: 100%;
-  /* max-width: 1440px; */
+
   max-width: 1280px;
   padding: 0 16px;
   margin: 0 auto;

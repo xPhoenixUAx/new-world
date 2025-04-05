@@ -1,15 +1,15 @@
 .about-wrap {
-  border-radius: 35px; /* Reduced from 50px by 30% */
+  border-radius: 35px;
   height: auto;
   background: #eeeffd;
-  padding: 35px; /* Reduced from 50px by 30% */
+  padding: 35px;
 }
 
 .head-block {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  gap: 49px; /* Reduced from 70px by 30% */
+  gap: 49px;
 }
 
 .img-block {
@@ -19,7 +19,7 @@
 .head-img {
   width: 100%;
   height: auto;
-  border-radius: 14px; /* Reduced from 20px by 30% */
+  border-radius: 14px;
 }
 
 .head-text-cont {
@@ -27,39 +27,27 @@
 }
 
 .about-heading {
-  font-size: clamp(
-    19.6px,
-    2.45vw,
-    35.7px
-  ); /* Reduced from clamp(28px, 3.5vw, 51px) by 30% */
+  font-size: 20px;
   font-weight: 700;
   color: #000;
-  padding-bottom: 21px; /* Reduced from 30px by 30% */
+  padding-bottom: 21px;
 }
 
 .about-text {
-  font-size: clamp(
-    11.2px,
-    1.4vw,
-    19.6px
-  ); /* Reduced from clamp(16px, 2vw, 28px) by 30% */
+  font-size: 16px;
   line-height: 1.5;
   color: #000;
-  padding-bottom: 21px; /* Reduced from 30px by 30% */
+  padding-bottom: 21px;
   font-weight: 300;
 }
 
 .about-btn {
   display: inline-block;
-  padding: 10.5px 21px; /* Reduced from 15px 30px by 30% */
+  padding: 10.5px 21px;
   background: #231f20;
   color: #fff;
-  border-radius: 35px; /* Reduced from 50px by 30% */
-  font-size: clamp(
-    11.2px,
-    0.84vw,
-    16.8px
-  ); /* Reduced from clamp(16px, 1.2vw, 24px) by 30% */
+  border-radius: 35px;
+  font-size: clamp(11.2px, 0.84vw, 16.8px);
   font-weight: 600;
   text-align: center;
 }
@@ -72,25 +60,21 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 14px; /* Reduced from 20px by 30% */
-  margin-top: 28px; /* Reduced from 40px by 30% */
+  gap: 14px;
+  margin-top: 28px;
 }
 
 .about-item {
-  flex: 1 1 210px; /* Reduced from 300px by 30% */
-  max-width: 303px; /* Reduced from 433px by 30% */
-  border-radius: 35px; /* Reduced from 50px by 30% */
+  flex: 1 1 210px;
+  max-width: 303px;
+  border-radius: 35px;
   box-shadow: 0 4px 8px rgba(47, 0, 81, 0.16);
   background: #fff;
   align-items: flex-start;
-  padding: 21px 28px 28px 21px; /* Reduced from 30px 40px 40px 30px by 30% */
+  padding: 21px 28px 28px 21px;
   background-repeat: no-repeat;
   background-position: bottom right;
-  background-size: 50% auto;
-}
-
-.about-item {
-  background-size: 30% auto 
+  background-size: 30% auto;
 }
 
 .about-item-1 {
@@ -108,58 +92,46 @@
 .item-head {
   font-family: var(--font-family);
   font-weight: 600;
-  font-size: clamp(
-    12.6px,
-    1.4vw,
-    21px
-  ); /* Reduced from clamp(18px, 2vw, 30px) by 30% */
+  font-size: 20px;
   line-height: 135%;
   color: #000;
-  padding-bottom: 21px; /* Reduced from 30px by 30% */
+  padding-bottom: 21px;
 }
 
 .item-text {
   font-family: var(--font-family);
   font-weight: 300;
-  font-size: clamp(
-    9.8px,
-    1.12vw,
-    19.6px
-  ); /* Reduced from clamp(14px, 1.6vw, 28px) by 30% */
+  font-size: 16px;
   line-height: 150%;
   color: #000;
 }
 
 .icon {
-  width: 35px; /* Reduced from 50px by 30% */
-  height: 35px; /* Reduced from 50px by 30% */
+  width: 35px;
+  height: 35px;
   background: url("/src/img/desk/why/1.svg") no-repeat right cover;
-  margin: 14px auto 0; /* Reduced from 20px auto 0 by 30% */
+  margin: 14px auto 0;
 }
 
 @media (min-width: 1020px) and (max-width: 1199px) {
-  
   .about-item:nth-child(1),
   .about-item:nth-child(2) {
-    width: calc(
-      50% - 14px
-    ); /* Reduced from calc(50% - 20px) by adjusting the subtraction */
-    max-width: 303px; /* Reduced from 433px by 30% */
+    width: calc(50% - 14px);
+    max-width: 303px;
     margin: 0;
     text-align: left;
   }
- 
 }
 
 @media (max-width: 768px) {
   .about-wrap {
-    padding: 14px; /* Reduced from 20px by 30% */
+    padding: 14px;
   }
   .head-block {
     flex-direction: column-reverse;
     align-items: center;
-    gap: 21px; /* Reduced from 30px by 30% */
-    padding-top: 35px; /* Reduced from 50px by 30% */
+    gap: 21px;
+    padding-top: 35px;
   }
   .img-block {
     max-width: 80%;
@@ -169,20 +141,12 @@
     text-align: center;
   }
   .about-heading {
-    font-size: clamp(
-      15.4px,
-      3.5vw,
-      31.5px
-    ); /* Reduced from clamp(22px, 5vw, 45px) by 30% */
-    padding-bottom: 14px; /* Reduced from 20px by 30% */
+    font-size: 20px;
+    padding-bottom: 14px;
   }
   .about-text {
-    font-size: clamp(
-      9.8px,
-      2.8vw,
-      19.6px
-    ); /* Reduced from clamp(14px, 4vw, 28px) by 30% */
-    padding-bottom: 14px; /* Reduced from 20px by 30% */
+    font-size: 16px;
+    padding-bottom: 14px;
     font-weight: 300;
   }
   .about-btn {
@@ -192,101 +156,68 @@
     display: flex;
     background: #231f20;
     color: #fff;
-    border-radius: 70px; /* Reduced from 100px by 30% */
-    padding: 14px 42px; /* Reduced from 20px 60px by 30% */
-    max-width: 193px; /* Reduced from 276px by 30% */
+    border-radius: 70px;
+    padding: 14px 42px;
+    max-width: 193px;
     height: auto;
     font-weight: 600;
     text-align: center;
-    font-size: clamp(
-      12.6px,
-      2.45vw,
-      21px
-    ); /* Reduced from clamp(18px, 3.5vw, 30px) by 30% */
+    font-size: clamp(12.6px, 2.45vw, 21px);
     justify-content: center;
     margin: 0 auto;
-    margin-top: 28px; /* Reduced from 40px by 30% */
+    margin-top: 28px;
   }
   .about-list {
-    /* flex-direction: column; */
-    gap: 21px; /* Reduced from 30px by 30% */
+    gap: 21px;
     justify-content: center;
   }
   .about-item {
     margin: 0 auto;
-    border-radius: 14px; /* Reduced from 20px by 30% */
-    padding: 21px 8.4px; /* Reduced from 30px 12px by 30% */
+    border-radius: 14px;
+    padding: 21px 8.4px;
     text-align: center;
   }
   .item-head {
-    font-size: clamp(
-      15.4px,
-      3.5vw,
-      24.5px
-    ); /* Reduced from clamp(22px, 5vw, 35px) by 30% */
+    font-size: 20px;
   }
   .item-text {
-    font-size: clamp(
-      9.8px,
-      2.8vw,
-      19.6px
-    ); /* Reduced from clamp(14px, 4vw, 28px) by 30% */
+    font-size: 16px;
     font-weight: 300;
   }
   .icon {
-    width: 7vw; /* Reduced from 10vw by 30% */
-    height: 7vw; /* Reduced from 10vw by 30% */
+    width: 7vw;
+    height: 7vw;
   }
 }
 
 @media (max-width: 480px) {
   .about-heading {
     font-weight: 700;
-    font-size: clamp(
-      14px,
-      4.9vw,
-      28px
-    ); /* Reduced from clamp(20px, 7vw, 40px) by 30% */
+    font-size: 20px;
     line-height: 1.3;
   }
   .about-text {
     font-family: var(--font-family);
     font-weight: 300;
-    font-size: clamp(
-      9.8px,
-      3.5vw,
-      19.6px
-    ); /* Reduced from clamp(14px, 5vw, 28px) by 30% */
+    font-size: 16px;
     line-height: 1.5;
     text-align: center;
   }
   .about-btn {
-    padding: 7px 14px; /* Reduced from 10px 20px by 30% */
-    font-size: clamp(
-      8.4px,
-      2.8vw,
-      14px
-    ); /* Reduced from clamp(12px, 4vw, 20px) by 30% */
+    padding: 7px 14px;
+    font-size: clamp(8.4px, 2.8vw, 14px);
   }
   .item-head {
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: clamp(
-      12.6px,
-      4.2vw,
-      19.6px
-    ); /* Reduced from clamp(18px, 6vw, 28px) by 30% */
+    font-size: 20px;
     line-height: 1.3;
     text-align: center;
   }
   .item-text {
     font-family: var(--font-family);
     font-weight: 300;
-    font-size: clamp(
-      8.4px,
-      2.8vw,
-      19.6px
-    ); /* Reduced from clamp(12px, 4vw, 28px) by 30% */
+    font-size: 16px;
     line-height: 1.5;
     text-align: center;
     color: #000;

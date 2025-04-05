@@ -6,12 +6,6 @@
     position: relative;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
 .bordered-content {
     padding-left: 20px;
     position: relative;
@@ -42,6 +36,7 @@
     flex-direction: column;
     justify-content: space-between;
     flex-shrink: 0;
+    position: relative;
 }
 
 .light-purple {
@@ -54,31 +49,29 @@
 }
 
 .review-content {
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    padding-top: 30px;
 }
 
 .quote-icon {
     position: absolute;
-    top: 0;
-    left: 0;
-    font-size: 40px;
-    color: #333;
-}
-
-.black .quote-icon {
-    color: #fff;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background-image: url(/src/img/desk/reviews/Vector.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .review-text {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.5;
     font-style: italic;
     text-align: center;
+    padding-top: 20px;
 }
 
 .review-author {
@@ -119,7 +112,7 @@
 .navigation-arrows {
     position: absolute;
     top: 20px;
-    right: 0;
+    right: 15px;
     display: flex;
     gap: 10px;
 }
@@ -175,9 +168,6 @@
         width: 200px;
         height: 300px;
     }
-
-   
-    
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -189,9 +179,7 @@
     .reviews-container {
         display: flex;
         flex-direction: row;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
+        overflow-x: hidden;
         padding-bottom: 10px;
     }
 
@@ -200,7 +188,6 @@
         max-width: 350px;
         height: auto;
         min-height: 280px;
-        scroll-snap-align: center;
     }
 
     .review-image {
@@ -209,11 +196,8 @@
     }
 
     .quote-icon {
-        font-size: 38px;
-    }
-
-    .review-text {
-        font-size: 15px;
+        width: 38px;
+        height: 38px;
     }
 
     .review-author span {
@@ -229,6 +213,15 @@
         width: 36px;
         height: 36px;
         font-size: 18px;
+    }
+
+    .reviews-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .reviews-container {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
     }
 }
 
@@ -249,10 +242,14 @@
     .review-image {
         order: -1;
         width: 100%;
-        max-width: 400px;
+        max-width: 300px;
         height: auto;
         aspect-ratio: 4 / 5;
         margin-bottom: 20px;
+    }
+
+    .review-image img[src*="student.png"] {
+        content: url("/src/img/desk/reviews/student-mob.png");
     }
 
     .reviews-container {
@@ -285,11 +282,8 @@
     }
 
     .quote-icon {
-        font-size: 36px;
-    }
-
-    .review-text {
-        font-size: 14px;
+        width: 36px;
+        height: 36px;
     }
 
     .review-author span {
@@ -322,15 +316,12 @@
     }
 
     .review-image {
-        max-width: 350px;
+        max-width: 250px;
     }
 
     .quote-icon {
-        font-size: 32px;
-    }
-
-    .review-text {
-        font-size: 12px;
+        width: 32px;
+        height: 32px;
     }
 
     .review-author span {

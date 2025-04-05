@@ -7,12 +7,12 @@
 
 .hero__inner {
   display: flex;
-  background: url("/src/img/desk/hero-bg-big.png") no-repeat center / cover;
+  background: url("/src/img/desk/hero-bg-big.png") no-repeat center/cover;
   justify-content: space-between;
   align-items: center;
   position: relative;
   z-index: 2;
-  border-radius: 14px; /* Reduced from 20px by 30% */
+  border-radius: 20px;
   width: 100%;
 }
 
@@ -23,14 +23,10 @@
 
 .hero__title {
   font-family: sans-serif;
-  font-size: clamp(
-    25.2px,
-    3.5vw,
-    44.8px
-  ); /* Reduced from clamp(36px, 5vw, 64px) by 30% */
+  font-size: clamp(36px, 5vw, 64px);
   font-weight: 700;
   line-height: 1.2;
-  margin-bottom: 14px; /* Reduced from 20px by 30% */
+  margin-bottom: 20px;
   word-break: break-word;
   hyphens: auto;
 }
@@ -48,48 +44,32 @@
 .highlight_2 {
   font-family: var(--third-family);
   font-weight: 500;
-  font-size: clamp(
-    25.2px,
-    3.5vw,
-    49px
-  ); /* Reduced from clamp(36px, 5vw, 70px) by 30% */
+  font-size: clamp(36px, 5vw, 70px);
   color: #ffd400;
   display: inline-block;
 }
 
 .hero__subtitle {
   font-family: sans-serif;
-  font-size: clamp(
-    12.6px,
-    1.4vw,
-    16.8px
-  ); /* Reduced from clamp(18px, 2vw, 24px) by 30% */
+  font-size: clamp(18px, 2vw, 24px);
   font-weight: 400;
   line-height: 1.5;
-  margin-bottom: 28px; /* Reduced from 40px by 30% */
+  margin-bottom: 40px;
 }
 
 .hero__buttons {
   display: flex;
-  gap: clamp(
-    10.5px,
-    1.4vw,
-    21px
-  ); /* Reduced from clamp(15px, 2vw, 30px) by 30% */
+  gap: clamp(15px, 2vw, 30px);
   width: 100%;
 }
 
 .hero__button {
   display: inline-block;
-  padding: clamp(7px, 1.05vw, 10.5px) clamp(14px, 2.1vw, 21px); /* Reduced from clamp(10px, 1.5vw, 15px) clamp(20px, 3vw, 30px) by 30% */
-  font-size: clamp(
-    11.2px,
-    1.05vw,
-    12.6px
-  ); /* Reduced from clamp(16px, 1.5vw, 18px) by 30% */
+  padding: clamp(10px, 1.5vw, 15px) clamp(20px, 3vw, 30px);
+  font-size: clamp(16px, 1.5vw, 18px);
   font-weight: 500;
   text-decoration: none;
-  border-radius: 35px; /* Reduced from 50px by 30% */
+  border-radius: 50px;
   transition: background-color 0.3s ease, color 0.3s ease;
   flex: 1;
   text-align: center;
@@ -107,7 +87,7 @@
 .hero__button--secondary {
   background-color: transparent;
   color: #000;
-  border: 1.4px solid #000; /* Reduced from 2px by 30% */
+  border: 2px solid #000;
 }
 
 .hero__button--secondary:hover {
@@ -128,15 +108,11 @@
 
 .hero__timer {
   background-color: #ffd400;
-  padding: clamp(
-    10.5px,
-    1.4vw,
-    14px
-  ); /* Reduced from clamp(15px, 2vw, 20px) by 30% */
-  border-radius: 21px; /* Reduced from 30px by 30% */
+  padding: clamp(15px, 2vw, 20px);
+  border-radius: 30px;
   text-align: center;
   width: 100%;
-  margin-top: 28px; /* Reduced from 40px by 30% */
+  margin-top: 40px;
 }
 
 .hero__timer-content {
@@ -144,16 +120,12 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 0 84px; /* Reduced from 120px by 30% */
+  padding: 0 120px;
 }
 
 .hero__timer-text {
   font-family: "Metropolis", sans-serif;
-  font-size: clamp(
-    11.2px,
-    1.05vw,
-    12.6px
-  ); /* Reduced from clamp(16px, 1.5vw, 18px) by 30% */
+  font-size: clamp(16px, 1.5vw, 18px);
   font-weight: 700;
   text-align: left;
 }
@@ -162,7 +134,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 7px; /* Reduced from 10px by 30% */
+  gap: 10px;
 }
 
 .hero__timer-block {
@@ -173,54 +145,35 @@
 
 .hero__timer-value {
   font-family: "Metropolis", sans-serif;
-  font-size: clamp(
-    16.8px,
-    2.1vw,
-    25.2px
-  ); /* Reduced from clamp(24px, 3vw, 36px) by 30% */
+  font-size: clamp(24px, 3vw, 36px);
   font-weight: 700;
   line-height: 1;
 }
 
 .hero__timer-label {
   font-family: "Metropolis", sans-serif;
-  font-size: clamp(
-    8.4px,
-    0.7vw,
-    9.8px
-  ); /* Reduced from clamp(12px, 1vw, 14px) by 30% */
+  font-size: clamp(12px, 1vw, 14px);
   font-weight: 300;
-  margin-top: 3.5px; /* Reduced from 5px by 30% */
+  margin-top: 5px;
 }
 
 .hero__timer-separator {
   font-family: "Metropolis", sans-serif;
-  font-size: clamp(
-    16.8px,
-    2.1vw,
-    25.2px
-  ); /* Reduced from clamp(24px, 3vw, 36px) by 30% */
+  font-size: clamp(24px, 3vw, 36px);
   font-weight: 700;
   line-height: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: clamp(
-    16.8px,
-    2.1vw,
-    25.2px
-  ); /* Reduced from clamp(24px, 3vw, 36px) by 30% */
-  margin-bottom: 14px; /* Reduced from 20px by 30% */
+  height: clamp(24px, 3vw, 36px);
+  margin-bottom: 20px;
 }
 
 .hero__timer-start {
   font-family: "Metropolis", sans-serif;
-  font-size: clamp(
-    9.8px,
-    0.84vw,
-    11.2px
-  ); /* Reduced from clamp(14px, 1.2vw, 16px) by 30% */
+  font-size: clamp(14px, 1.2vw, 16px);
   font-weight: 300;
+
   text-align: right;
 }
 
@@ -228,7 +181,7 @@
   .hero__inner {
     flex-direction: column;
     text-align: center;
-    padding: 14px; /* Reduced from 20px by 30% */
+    padding: 20px;
   }
 
   .hero__content {
@@ -236,119 +189,83 @@
   }
 
   .hero__title {
-    font-size: clamp(
-      19.6px,
-      2.8vw,
-      25.2px
-    ); /* Reduced from clamp(28px, 4vw, 36px) by 30% */
+    font-size: clamp(28px, 4vw, 36px);
   }
 
   .hero__subtitle {
-    font-size: clamp(
-      11.2px,
-      1.4vw,
-      12.6px
-    ); /* Reduced from clamp(16px, 2vw, 18px) by 30% */
+    font-size: clamp(16px, 2vw, 18px);
   }
 
   .hero__buttons {
     flex-direction: column;
-    gap: 10.5px; /* Reduced from 15px by 30% */
+    gap: 15px;
   }
 
   .hero__button {
-    padding: clamp(7px, 1.05vw, 10.5px) clamp(14px, 2.1vw, 21px); /* Reduced from clamp(10px, 1.5vw, 15px) clamp(20px, 3vw, 30px) by 30% */
-    font-size: 11.2px; /* Reduced from 16px by 30% */
+    padding: clamp(10px, 1.5vw, 15px) clamp(20px, 3vw, 30px);
+    font-size: 16px;
     width: 100%;
   }
 
   .hero__image {
     max-width: 80%;
-    margin: 14px auto; /* Reduced from 20px auto by 30% */
+    margin: 20px auto;
   }
 
   .hero__timer {
-    padding: 10.5px; /* Reduced from 15px by 30% */
-    margin-top: 14px; /* Reduced from 20px by 30% */
+    padding: 15px;
+    margin-top: 20px;
   }
 
   .hero__timer-content {
     flex-direction: column;
-    gap: 7px; /* Reduced from 10px by 30% */
-    padding: 0 14px; /* Reduced from 0 20px by 30% */
+    gap: 10px;
+    padding: 0 20px;
   }
 
   .hero__timer-text {
-    font-size: clamp(
-      9.8px,
-      1.05vw,
-      11.2px
-    ); /* Reduced from clamp(14px, 1.5vw, 16px) by 30% */
+    font-size: clamp(14px, 1.5vw, 16px);
     max-width: 100%;
     text-align: center;
   }
 
   .hero__timer-countdown {
-    gap: 3.5px; /* Reduced from 5px by 30% */
+    gap: 5px;
   }
 
   .hero__timer-value {
-    font-size: clamp(
-      14px,
-      2.1vw,
-      16.8px
-    ); /* Reduced from clamp(20px, 3vw, 24px) by 30% */
+    font-size: clamp(20px, 3vw, 24px);
   }
 
   .hero__timer-separator {
-    font-size: clamp(
-      14px,
-      2.1vw,
-      16.8px
-    ); /* Reduced from clamp(20px, 3vw, 24px) by 30% */
-    height: clamp(
-      14px,
-      2.1vw,
-      16.8px
-    ); /* Reduced from clamp(20px, 3vw, 24px) by 30% */
-    margin-bottom: 10.5px; /* Reduced from 15px by 30% */
+    font-size: clamp(20px, 3vw, 24px);
+    height: clamp(20px, 3vw, 24px);
+    margin-bottom: 15px;
   }
 
   .hero__timer-start {
-    font-size: clamp(
-      8.4px,
-      0.84vw,
-      9.8px
-    ); /* Reduced from clamp(12px, 1.2vw, 14px) by 30% */
+    font-size: clamp(12px, 1.2vw, 14px);
     max-width: 100%;
     text-align: center;
   }
 
   .hero__timer-label {
-    font-size: clamp(
-      7px,
-      0.7vw,
-      8.4px
-    ); /* Reduced from clamp(10px, 1vw, 12px) by 30% */
+    font-size: clamp(10px, 1vw, 12px);
   }
 }
 
 @media (max-width: 480px) {
   .hero__title {
-    font-size: clamp(
-      16.8px,
-      2.8vw,
-      19.6px
-    ); /* Reduced from clamp(24px, 4vw, 28px) by 30% */
+    font-size: clamp(24px, 4vw, 28px);
   }
 
   .hero__subtitle {
-    font-size: 9.8px; /* Reduced from 14px by 30% */
+    font-size: 14px;
   }
 
   .hero__button {
-    padding: clamp(5.6px, 1.05vw, 8.4px) clamp(10.5px, 2.1vw, 14px); /* Reduced from clamp(8px, 1.5vw, 12px) clamp(15px, 3vw, 20px) by 30% */
-    font-size: 9.8px; /* Reduced from 14px by 30% */
+    padding: clamp(8px, 1.5vw, 12px) clamp(15px, 3vw, 20px);
+    font-size: 14px;
   }
 
   .hero__image {
@@ -356,28 +273,28 @@
   }
 
   .hero__timer-text {
-    font-size: 9.8px; /* Reduced from 14px by 30% */
+    font-size: 14px;
   }
 
   .hero__timer-countdown {
-    gap: 2.1px; /* Reduced from 3px by 30% */
+    gap: 3px;
   }
 
   .hero__timer-value {
-    font-size: 14px; /* Reduced from 20px by 30% */
+    font-size: 20px;
   }
 
   .hero__timer-separator {
-    font-size: 14px; /* Reduced from 20px by 30% */
-    height: 14px; /* Reduced from 20px by 30% */
-    margin-bottom: 7px; /* Reduced from 10px by 30% */
+    font-size: 20px;
+    height: 20px;
+    margin-bottom: 10px;
   }
 
   .hero__timer-start {
-    font-size: 8.4px; /* Reduced from 12px by 30% */
+    font-size: 12px;
   }
 
   .hero__timer-label {
-    font-size: 7px; /* Reduced from 10px by 30% */
+    font-size: 10px;
   }
 }
