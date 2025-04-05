@@ -1,86 +1,134 @@
-.benefit-wrap {
-  background: url("../img/desk/erasebg-transformed\ 1.png");
-  background-position: right;
+.benefits {
+  background-image: url("../img/desk/erasebg-transformed\ 1.png");
   background-repeat: no-repeat;
+  background-position: right;
   padding-top: 250px;
-  padding-bottom: 90px;
 }
-
-.timeline {
-  padding: 40px 20px;
-  position: relative;
-  text-align: center;
+.benefits-head {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 139%;
+  color: #000;
+  padding-bottom: 82px;
 }
-
-.timeline .title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 40px;
-}
-
-.steps {
+.benefits-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 20px;
   position: relative;
+  padding-bottom: 24px;
 }
 
-.steps::before {
-  content: "";
+.continuous-line {
   position: absolute;
-  top: 40px;
-  left: 10%;
-  right: 10%;
   height: 4px;
-  background-color: #c5b8fd;
+  background-color: #bbb5fd;
+  top: 45px;
+  left: 125px;
+  right: 125px;
   z-index: 1;
+  max-width: 1219px;
 }
 
-.step {
+.benefit {
+  flex: 1;
+  text-align: center;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 30%;
   position: relative;
   z-index: 2;
 }
 
-.icon {
-  width: 50px;
-  height: 50px;
-  background-image: url("../img/desk/icon.png"); /* або своя іконка */
-  background-size: cover;
-  background-position: center;
+.icon-container {
   margin-bottom: 20px;
+  position: relative;
 }
 
-.step p {
-  font-size: 14px;
-  text-align: center;
-  max-width: 200px;
+.icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.icon img {
+  max-width: 94px;
+  height: 104px;
+  object-fit: contain;
+}
+
+.benefit-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.benefit-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.benefit-description {
+  font-size: 16px;
 }
 
 @media (max-width: 768px) {
-  .steps {
+  .benefits {
+    background-image: url("../img/mobile/why-bg.png");
+    background-position: bottom right;
+  }
+  .benefits-head {
+    padding-bottom: 55px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 136%;
+    text-align: center;
+    color: #000;
+  }
+  .benefits-container {
     flex-direction: column;
+    align-items: flex-start;
+    padding-left: 20px;
+    gap: 110px;
+  }
+
+  .benefit {
+    margin-bottom: 40px;
+    flex-direction: row;
+    text-align: left;
+    max-width: 100%;
     align-items: flex-start;
   }
 
-  .steps::before {
-    display: none;
+  .icon-container {
+    margin-bottom: 0;
+    margin-right: 20px;
   }
 
-  .step {
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    gap: 15px;
-    margin-bottom: 20px;
-  }
-
-  .step p {
+  .benefit-text {
+    align-items: flex-start;
     text-align: left;
-    max-width: none;
+  }
+
+  .continuous-line {
+    width: 4px;
+    height: calc(100% - 120px);
+    top: 35px;
+    left: 55px;
+    right: auto;
+    transform: none;
+  }
+  .icon img {
+    max-width: 62px;
+    height: 68px;
+    object-fit: contain;
   }
 }

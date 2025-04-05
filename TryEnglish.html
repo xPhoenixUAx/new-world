@@ -1,280 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/base.css" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/main/hero.css" />
+    <link rel="stylesheet" href="./src/css/benefit.css" />
+    <link rel="stylesheet" href="./src/css/try.css" />
+    <link rel="stylesheet" href="./src/css/how.css" />
+    <link rel="stylesheet" href="./src/css/main/reviews.css" />
+    <link rel="stylesheet" href="/src/css/contact.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="./src/css/base.css" />
-  <link rel="stylesheet" href="./src/css/reset.css" />
-  <link rel="stylesheet" href="./src/css/main/hero.css" />
-  <link rel="stylesheet" href="./src/css/benefit.css" />
-  <link rel="stylesheet" href="./src/css/try.css" />
-  <link rel="stylesheet" href="./src/css/how.css" />
-  <link rel="stylesheet" href="./src/css/main/reviews.css" />
-  <link rel="stylesheet" href="/src/css/contact.css" />
-
-
-</head>
-
-<body>
-  <section class="about">
-    <div class="container">
-      <div class="line-cont">
-        <a href="./index.html" class="position"> Główna</a><span class="line"></span>
-        <a class="position" href="./TryEnglish.html"> Wypróbuj za darmo </a>
-      </div>
-      <div class="about-wrap">
-        <div class="head-block">
-          <div class="img-block">
-            <picture>
-              <source media="(max-width: 768px)" srcset="/src/img/mobile/Img.png" />
-              <source media="(min-width: 769px)" srcset="/src/img/desk/student-class-looking-course.png" />
-              <img src="default-image.jpg" alt="Why Us Image" data-translate-key="about_image_alt" />
-            </picture>
-          </div>
-          <div class="head-text-cont">
-            <h2 class="about-heading" data-translate-key="">
-              Wypróbuj 3 darmowe lekcje angielskiego i przekonaj się, jakie to
-              proste!
-            </h2>
-
-            <a href="#" class="about-btn" data-translate-key="about_button">
-              Wypróbuj za darmo
-            </a>
-          </div>
+  <body>
+    <section class="about">
+      <div class="container">
+        <div class="line-cont">
+          <a href="./index.html" class="position"> Główna</a
+          ><span class="line"></span>
+          <a class="position" href="./TryEnglish.html"> Wypróbuj za darmo </a>
         </div>
-        <h3 class="second-head">
-          Co czeka na Ciebie podczas darmowych lekcji?
-        </h3>
-        <ul class="about-list">
-          <li class="about-item about-item-1">
-            <h3 class="item-head" data-translate-key="">
-              Ocena Twojego poziomu i spersonalizowany program nauki.
-            </h3>
-            <p class="item-text" data-translate-key="">
-              Dzięki testowi określimy Twój poziom angielskiego i opracujemy
-              plan nauki.
-            </p>
-          </li>
-          <li class="about-item about-item-2">
-            <h3 class="item-head" data-translate-key="">
-              Interaktywne zajęcia skoncentrowane na praktyce mówienia.
-            </h3>
-            <p class="item-text" data-translate-key="">
-              Lekcje są zaprojektowane tak, abyś mówił jak najwięcej i pokonał
-              barierę językową.
-            </p>
-          </li>
-          <li class="about-item about-item-3">
-            <h3 class="item-head" data-translate-key="">
-              Wskazówki i rekomendacje dotyczące poprawy umiejętności
-              językowych.
-            </h3>
-            <p class="item-text" data-translate-key="">
-              Nauczyciel udzieli przydatnych wskazówek dotyczących nauki
-              języka i podpowie, jak efektywniej uczyć się angielskiego.
-            </p>
-          </li>
-        </ul>
-      </div>
+        <div class="about-wrap">
+          <div class="head-block">
+            <div class="img-block">
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="/src/img/mobile/Img.png"
+                />
+                <source
+                  media="(min-width: 769px)"
+                  srcset="/src/img/desk/student-class-looking-course.png"
+                />
+                <img
+                  src="default-image.jpg"
+                  alt="Why Us Image"
+                  data-translate-key="about_image_alt"
+                />
+              </picture>
+            </div>
+            <div class="head-text-cont">
+              <h2 class="about-heading" data-translate-key="">
+                Wypróbuj 3 darmowe lekcje angielskiego i przekonaj się, jakie to
+                proste!
+              </h2>
 
-      <div class="hero__timer">
-        <div class="hero__timer-content">
-          <p class="hero__timer-text" data-translate-key="hero_timer_text">
-            Do rozpoczęcia kursu <br />
-            pozostało:
-          </p>
-          <div class="hero__timer-countdown">
-            <div class="hero__timer-block">
-              <span class="hero__timer-value" id="days">150</span>
-              <span class="hero__timer-label" data-translate-key="hero_timer_days">Dni</span>
-            </div>
-            <div class="hero__timer-block">
-              <span class="hero__timer-value" id="hours">10</span>
-              <span class="hero__timer-label" data-translate-key="hero_timer_hours">Godzina</span>
-            </div>
-            <span class="hero__timer-separator">:</span>
-            <div class="hero__timer-block">
-              <span class="hero__timer-value" id="minutes">01</span>
-              <span class="hero__timer-label" data-translate-key="hero_timer_minutes">Chwila</span>
-            </div>
-            <span class="hero__timer-separator">:</span>
-            <div class="hero__timer-block">
-              <span class="hero__timer-value" id="seconds">00</span>
-              <span class="hero__timer-label" data-translate-key="hero_timer_seconds">Chwila</span>
+              <a href="#" class="about-btn" data-translate-key="about_button">
+                Wypróbuj za darmo
+              </a>
             </div>
           </div>
-          <p class="hero__timer-start" data-translate-key="hero_timer_start">
-            Zaczynamy <br />
-            1 września 2025 o 00:00
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="benefit" id="benefit">
-    <div class="container">
-      <div class="benefit-wrap">
-        <h2 class="title">Dlaczego warto spróbować?</h2>
-        <div class="steps">
-          <div class="step">
-            <div class="icon"></div>
-            <p>
-              Indywidualne podejście – nauczyciel dostosuje się do Twojego
-              poziomu i celów.
-            </p>
-          </div>
-          <div class="step">
-            <div class="icon"></div>
-            <p>Elastyczny harmonogram – wybierz dogodny czas zajęć.</p>
-          </div>
-          <div class="step">
-            <div class="icon"></div>
-            <p>
-              Brak zobowiązań – spróbuj i zdecyduj, czy nasz format Ci
-              odpowiada.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-
-
-
-  
-
-
-
-
-
-
-
-  <section id="reviews" class="reviews-section">
-    <div class="container">
-      <div class="bordered-content">
-        <h2 data-translate-key="reviews_title">Opinie naszych uczniów</h2>
-        <div class="reviews-container">
-          <div class="review-card light-purple">
-            <div class="review-content">
-              <span class="quote-icon"></span>
-              <p class="review-text" data-translate-key="review_1_text">
-                Zajęcia tutaj to czysta przyjemność! Nauczyciele są uważni,
-                lekko zawsze interesujące. Już widzę postępy!
-              </p>
-            </div>
-            <div class="review-author">
-              <img src="/src/img/desk/reviews/magda.png" alt="Anna" class="author-img" />
-              <span data-translate-key="review_1_author">Anna</span>
-            </div>
-          </div>
-          <div class="review-image">
-            <img src="/src/img/desk/reviews/student.png" alt="Student with books"
-              data-translate-key="review_image_alt" />
-          </div>
-          <div class="review-card black">
-            <div class="review-content">
-              <span class="quote-icon"></span>
-              <p class="review-text" data-translate-key="review_2_text">
-                Elastyczne ceny polecamy i przystępne ceny. Polecam
-                wszystkim, którzy chcą się учить английского в комфортовых
-                условиях!
-              </p>
-            </div>
-            <div class="review-author">
-              <img src="/src/img/desk/reviews/Image-60.png" alt="Dmitrij" class="author-img" />
-              <span data-translate-key="review_2_author">Dmitrij</span>
-            </div>
-          </div>
-          <div class="review-card light-purple">
-            <div class="review-content">
-              <span class="quote-icon"></span>
-              <p class="review-text" data-translate-key="review_3_text">
-                Niesamowite doświadczenie! Nauczyciele dostosowują się do
-                potrzeb uczniów, zajęcia zawsze są ciekawe.
-              </p>
-            </div>
-            <div class="review-author">
-              <img src="/src/img/desk/reviews/anna.png" alt="Magda" class="author-img" />
-              <span data-translate-key="review_3_author">Magda</span>
-            </div>
-          </div>
-        </div>
-        <div class="navigation-arrows">
-          <button class="arrow left-arrow">←</button>
-          <button class="arrow right-arrow">→</button>
-        </div>
-        <div class="indicators">
-          <span class="indicator active"></span>
-          <span class="indicator"></span>
-          <span class="indicator"></span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-
-
-
-
-
-  <section id="contact" class="contact" id="contact">
-    <div class="container">
-      <div class="wrap">
-        <div class="left-block">
-          <div class="left-wrap">
-            <h2 class="left-text" data-translate-key="contact_left_text">
-              Zacznij naukę od darmowej lekcji!
-            </h2>
-          </div>
-          <div class="img-wrap">
-            <img class="contact-img" src="/src/img/desk/pretty-student-with-curly-hair-standing-smiling.png"
-              alt="Student smiling" loading="lazy" data-translate-key="contact_image_alt" />
-          </div>
-        </div>
-        <div class="right-block">
-          <h3 class="right-head" data-translate-key="contact_right_head">
-            Zrób krok bliżej do swojego celu!
+          <h3 class="second-head">
+            Co czeka na Ciebie podczas darmowych lekcji?
           </h3>
-          <p class="right-text" data-translate-key="contact_right_text">
-            Wypełnij formularz, a nasz specjalista zapisze Cię na 3 darmowe
-            lekcje!
-          </p>
-          <form class="modal__form" action="send-mail.php" method="POST">
-            <div class="modal__label">
-              <label for="name" class="sr-only" data-translate-key="form_name_label">Imię</label>
-              <input type="text" id="name" name="name" placeholder="Imię" required
-                data-translate-key="form_name_placeholder" />
+          <ul class="about-list">
+            <li class="about-item about-item-1">
+              <h3 class="item-head" data-translate-key="">
+                Ocena Twojego poziomu i spersonalizowany program nauki.
+              </h3>
+              <p class="item-text" data-translate-key="">
+                Dzięki testowi określimy Twój poziom angielskiego i opracujemy
+                plan nauki.
+              </p>
+            </li>
+            <li class="about-item about-item-2">
+              <h3 class="item-head" data-translate-key="">
+                Interaktywne zajęcia skoncentrowane na praktyce mówienia.
+              </h3>
+              <p class="item-text" data-translate-key="">
+                Lekcje są zaprojektowane tak, abyś mówił jak najwięcej i pokonał
+                barierę językową.
+              </p>
+            </li>
+            <li class="about-item about-item-3">
+              <h3 class="item-head" data-translate-key="">
+                Wskazówki i rekomendacje dotyczące poprawy umiejętności
+                językowych.
+              </h3>
+              <p class="item-text" data-translate-key="">
+                Nauczyciel udzieli przydatnych wskazówek dotyczących nauki
+                języka i podpowie, jak efektywniej uczyć się angielskiego.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero__timer">
+          <div class="hero__timer-content">
+            <p class="hero__timer-text" data-translate-key="hero_timer_text">
+              Do rozpoczęcia kursu <br />
+              pozostało:
+            </p>
+            <div class="hero__timer-countdown">
+              <div class="hero__timer-block">
+                <span class="hero__timer-value" id="days">150</span>
+                <span
+                  class="hero__timer-label"
+                  data-translate-key="hero_timer_days"
+                  >Dni</span
+                >
+              </div>
+              <div class="hero__timer-block">
+                <span class="hero__timer-value" id="hours">10</span>
+                <span
+                  class="hero__timer-label"
+                  data-translate-key="hero_timer_hours"
+                  >Godzina</span
+                >
+              </div>
+              <span class="hero__timer-separator">:</span>
+              <div class="hero__timer-block">
+                <span class="hero__timer-value" id="minutes">01</span>
+                <span
+                  class="hero__timer-label"
+                  data-translate-key="hero_timer_minutes"
+                  >Chwila</span
+                >
+              </div>
+              <span class="hero__timer-separator">:</span>
+              <div class="hero__timer-block">
+                <span class="hero__timer-value" id="seconds">00</span>
+                <span
+                  class="hero__timer-label"
+                  data-translate-key="hero_timer_seconds"
+                  >Chwila</span
+                >
+              </div>
             </div>
-            <div class="modal__label">
-              <label for="phone" class="sr-only" data-translate-key="form_phone_label">Telefon</label>
-              <input type="tel" id="phone" name="phone" placeholder="Telefon" required
-                data-translate-key="form_phone_placeholder" />
-            </div>
-            <div class="modal__label">
-              <label for="email" class="sr-only" data-translate-key="form_email_label">E-mail</label>
-              <input type="email" id="email" name="email" placeholder="E-mail" required
-                data-translate-key="form_email_placeholder" />
-            </div>
-            <button type="submit" class="modal__button" data-translate-key="form_submit_button">
-              Wyślij
-            </button>
-          </form>
+            <p class="hero__timer-start" data-translate-key="hero_timer_start">
+              Zaczynamy <br />
+              1 września 2025 o 00:00
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <script src="components/header/header.js"></script>
-  <script src="/src/js/hero.js"></script>
-  <script src="/src/js/translations.js"></script>
-  <script src="/src/js/reviews.js"></script>
-  <script src="/src/js/form.js"></script>
-</body>
+    <section class="benefits">
+      <div class="container">
+        <h1 class="benefits-head">Dlaczego warto spróbować?</h1>
 
+        <div class="benefits-container">
+          <div class="continuous-line"></div>
+
+          <div class="benefit">
+            <div class="icon-container">
+              <div class="icon">
+                <img src="./src/img/desk/icon.png" />
+              </div>
+            </div>
+            <div class="benefit-text">
+              <p class="benefit-title">Indywidualne podejście –</p>
+              <p class="benefit-description">
+                nauczyciel dostosuje się do Twojego poziomu i celów.
+              </p>
+            </div>
+          </div>
+
+          <div class="benefit">
+            <div class="icon-container">
+              <div class="icon">
+                <img src="./src/img/desk/icon.png" />
+              </div>
+            </div>
+            <div class="benefit-text">
+              <p class="benefit-title">Elastyczny harmonogram –</p>
+              <p class="benefit-description">wybierz dogodny czas zajęć.</p>
+            </div>
+          </div>
+
+          <div class="benefit">
+            <div class="icon-container">
+              <div class="icon">
+                <img src="./src/img/desk/icon.png" />
+              </div>
+            </div>
+            <div class="benefit-text">
+              <p class="benefit-title">Brak zobowiązań –</p>
+              <p class="benefit-description">
+                spróbuj i zdecyduj, czy nasz format Ci odpowiada.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="reviews-section">
+      <div class="container">
+        <div class="bordered-content">
+          <h2 data-translate-key="reviews_title">Opinie naszych uczniów</h2>
+          <div class="reviews-container">
+            <div class="review-card light-purple">
+              <div class="review-content">
+                <span class="quote-icon"></span>
+                <p class="review-text" data-translate-key="review_1_text">
+                  Zajęcia tutaj to czysta przyjemność! Nauczyciele są uważni,
+                  lekko zawsze interesujące. Już widzę postępy!
+                </p>
+              </div>
+              <div class="review-author">
+                <img
+                  src="/src/img/desk/reviews/magda.png"
+                  alt="Anna"
+                  class="author-img"
+                />
+                <span data-translate-key="review_1_author">Anna</span>
+              </div>
+            </div>
+            <div class="review-image">
+              <img
+                src="/src/img/desk/reviews/student.png"
+                alt="Student with books"
+                data-translate-key="review_image_alt"
+              />
+            </div>
+            <div class="review-card black">
+              <div class="review-content">
+                <span class="quote-icon"></span>
+                <p class="review-text" data-translate-key="review_2_text">
+                  Elastyczne ceny polecamy i przystępne ceny. Polecam wszystkim,
+                  którzy chcą się учить английского в комфортовых условиях!
+                </p>
+              </div>
+              <div class="review-author">
+                <img
+                  src="/src/img/desk/reviews/Image-60.png"
+                  alt="Dmitrij"
+                  class="author-img"
+                />
+                <span data-translate-key="review_2_author">Dmitrij</span>
+              </div>
+            </div>
+            <div class="review-card light-purple">
+              <div class="review-content">
+                <span class="quote-icon"></span>
+                <p class="review-text" data-translate-key="review_3_text">
+                  Niesamowite doświadczenie! Nauczyciele dostosowują się do
+                  potrzeb uczniów, zajęcia zawsze są ciekawe.
+                </p>
+              </div>
+              <div class="review-author">
+                <img
+                  src="/src/img/desk/reviews/anna.png"
+                  alt="Magda"
+                  class="author-img"
+                />
+                <span data-translate-key="review_3_author">Magda</span>
+              </div>
+            </div>
+          </div>
+          <div class="navigation-arrows">
+            <button class="arrow left-arrow">←</button>
+            <button class="arrow right-arrow">→</button>
+          </div>
+          <div class="indicators">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact" id="contact">
+      <div class="container">
+        <div class="wrap">
+          <div class="left-block">
+            <div class="left-wrap">
+              <h2 class="left-text" data-translate-key="contact_left_text">
+                Zacznij naukę od darmowej lekcji!
+              </h2>
+            </div>
+            <div class="img-wrap">
+              <img
+                class="contact-img"
+                src="/src/img/desk/pretty-student-with-curly-hair-standing-smiling.png"
+                alt="Student smiling"
+                loading="lazy"
+                data-translate-key="contact_image_alt"
+              />
+            </div>
+          </div>
+          <div class="right-block">
+            <h3 class="right-head" data-translate-key="contact_right_head">
+              Zrób krok bliżej do swojego celu!
+            </h3>
+            <p class="right-text" data-translate-key="contact_right_text">
+              Wypełnij formularz, a nasz specjalista zapisze Cię na 3 darmowe
+              lekcje!
+            </p>
+            <form class="modal__form" action="send-mail.php" method="POST">
+              <div class="modal__label">
+                <label
+                  for="name"
+                  class="sr-only"
+                  data-translate-key="form_name_label"
+                  >Imię</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Imię"
+                  required
+                  data-translate-key="form_name_placeholder"
+                />
+              </div>
+              <div class="modal__label">
+                <label
+                  for="phone"
+                  class="sr-only"
+                  data-translate-key="form_phone_label"
+                  >Telefon</label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Telefon"
+                  required
+                  data-translate-key="form_phone_placeholder"
+                />
+              </div>
+              <div class="modal__label">
+                <label
+                  for="email"
+                  class="sr-only"
+                  data-translate-key="form_email_label"
+                  >E-mail</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="E-mail"
+                  required
+                  data-translate-key="form_email_placeholder"
+                />
+              </div>
+              <button
+                type="submit"
+                class="modal__button"
+                data-translate-key="form_submit_button"
+              >
+                Wyślij
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="components/header/header.js"></script>
+    <script src="/src/js/hero.js"></script>
+    <script src="/src/js/translations.js"></script>
+    <script src="/src/js/reviews.js"></script>
+    <script src="/src/js/form.js"></script>
+  </body>
 </html>
