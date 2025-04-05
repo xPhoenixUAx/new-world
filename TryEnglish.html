@@ -1,241 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./src/css/base.css" />
-    <link rel="stylesheet" href="./src/css/reset.css" />
-    <link rel="stylesheet" href="./src/css/main/hero.css" />
-    <link rel="stylesheet" href="./src/css/benefit.css" />
-    <link rel="stylesheet" href="./src/css/try.css" />
-    <link rel="stylesheet" href="./src/css/how.css" />
-  </head>
-  <body>
-    <section class="about">
-      <div class="container">
-        <div class="line-cont">
-          <a href="./index.html" class="position"> Główna</a
-          ><span class="line"></span>
-          <a class="position" href="./TryEnglish.html"> Wypróbuj za darmo </a>
-        </div>
-        <div class="about-wrap">
-          <div class="head-block">
-            <div class="img-block">
-              <picture>
-                <source
-                  media="(max-width: 768px)"
-                  srcset="/src/img/mobile/Img.png"
-                />
-                <source
-                  media="(min-width: 769px)"
-                  srcset="/src/img/desk/student-class-looking-course.png"
-                />
-                <img
-                  src="default-image.jpg"
-                  alt="Why Us Image"
-                  data-translate-key="about_image_alt"
-                />
-              </picture>
-            </div>
-            <div class="head-text-cont">
-              <h2 class="about-heading" data-translate-key="">
-                Wypróbuj 3 darmowe lekcje angielskiego i przekonaj się, jakie to
-                proste!
-              </h2>
 
-              <a href="#" class="about-btn" data-translate-key="about_button">
-                Wypróbuj za darmo
-              </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./src/css/base.css" />
+  <link rel="stylesheet" href="./src/css/reset.css" />
+  <link rel="stylesheet" href="./src/css/main/hero.css" />
+  <link rel="stylesheet" href="./src/css/benefit.css" />
+  <link rel="stylesheet" href="./src/css/try.css" />
+  <link rel="stylesheet" href="./src/css/how.css" />
+</head>
+
+<body>
+  <section class="about">
+    <div class="container">
+      <div class="line-cont">
+        <a href="./index.html" class="position"> Główna</a><span class="line"></span>
+        <a class="position" href="./TryEnglish.html"> Wypróbuj za darmo </a>
+      </div>
+      <div class="about-wrap">
+        <div class="head-block">
+          <div class="img-block">
+            <picture>
+              <source media="(max-width: 768px)" srcset="/src/img/mobile/Img.png" />
+              <source media="(min-width: 769px)" srcset="/src/img/desk/student-class-looking-course.png" />
+              <img src="default-image.jpg" alt="Why Us Image" data-translate-key="about_image_alt" />
+            </picture>
+          </div>
+          <div class="head-text-cont">
+            <h2 class="about-heading" data-translate-key="">
+              Wypróbuj 3 darmowe lekcje angielskiego i przekonaj się, jakie to
+              proste!
+            </h2>
+
+            <a href="#" class="about-btn" data-translate-key="about_button">
+              Wypróbuj za darmo
+            </a>
+          </div>
+        </div>
+        <h3 class="second-head">
+          Co czeka na Ciebie podczas darmowych lekcji?
+        </h3>
+        <ul class="about-list">
+          <li class="about-item about-item-1">
+            <h3 class="item-head" data-translate-key="">
+              Ocena Twojego poziomu i spersonalizowany program nauki.
+            </h3>
+            <p class="item-text" data-translate-key="">
+              Dzięki testowi określimy Twój poziom angielskiego i opracujemy
+              plan nauki.
+            </p>
+          </li>
+          <li class="about-item about-item-2">
+            <h3 class="item-head" data-translate-key="">
+              Interaktywne zajęcia skoncentrowane na praktyce mówienia.
+            </h3>
+            <p class="item-text" data-translate-key="">
+              Lekcje są zaprojektowane tak, abyś mówił jak najwięcej i pokonał
+              barierę językową.
+            </p>
+          </li>
+          <li class="about-item about-item-3">
+            <h3 class="item-head" data-translate-key="">
+              Wskazówki i rekomendacje dotyczące poprawy umiejętności
+              językowych.
+            </h3>
+            <p class="item-text" data-translate-key="">
+              Nauczyciel udzieli przydatnych wskazówek dotyczących nauki
+              języka i podpowie, jak efektywniej uczyć się angielskiego.
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hero__timer">
+        <div class="hero__timer-content">
+          <p class="hero__timer-text" data-translate-key="hero_timer_text">
+            Do rozpoczęcia kursu <br />
+            pozostało:
+          </p>
+          <div class="hero__timer-countdown">
+            <div class="hero__timer-block">
+              <span class="hero__timer-value" id="days">150</span>
+              <span class="hero__timer-label" data-translate-key="hero_timer_days">Dni</span>
+            </div>
+            <div class="hero__timer-block">
+              <span class="hero__timer-value" id="hours">10</span>
+              <span class="hero__timer-label" data-translate-key="hero_timer_hours">Godzina</span>
+            </div>
+            <span class="hero__timer-separator">:</span>
+            <div class="hero__timer-block">
+              <span class="hero__timer-value" id="minutes">01</span>
+              <span class="hero__timer-label" data-translate-key="hero_timer_minutes">Chwila</span>
+            </div>
+            <span class="hero__timer-separator">:</span>
+            <div class="hero__timer-block">
+              <span class="hero__timer-value" id="seconds">00</span>
+              <span class="hero__timer-label" data-translate-key="hero_timer_seconds">Chwila</span>
             </div>
           </div>
-          <h3 class="second-head">
-            Co czeka na Ciebie podczas darmowych lekcji?
-          </h3>
-          <ul class="about-list">
-            <li class="about-item about-item-1">
-              <h3 class="item-head" data-translate-key="">
-                Ocena Twojego poziomu i spersonalizowany program nauki.
-              </h3>
-              <p class="item-text" data-translate-key="">
-                Dzięki testowi określimy Twój poziom angielskiego i opracujemy
-                plan nauki.
-              </p>
-            </li>
-            <li class="about-item about-item-2">
-              <h3 class="item-head" data-translate-key="">
-                Interaktywne zajęcia skoncentrowane na praktyce mówienia.
-              </h3>
-              <p class="item-text" data-translate-key="">
-                Lekcje są zaprojektowane tak, abyś mówił jak najwięcej i pokonał
-                barierę językową.
-              </p>
-            </li>
-            <li class="about-item about-item-3">
-              <h3 class="item-head" data-translate-key="">
-                Wskazówki i rekomendacje dotyczące poprawy umiejętności
-                językowych.
-              </h3>
-              <p class="item-text" data-translate-key="">
-                Nauczyciel udzieli przydatnych wskazówek dotyczących nauki
-                języka i podpowie, jak efektywniej uczyć się angielskiego.
-              </p>
-            </li>
-          </ul>
+          <p class="hero__timer-start" data-translate-key="hero_timer_start">
+            Zaczynamy <br />
+            1 września 2025 o 00:00
+          </p>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="hero__timer">
-          <div class="hero__timer-content">
-            <p class="hero__timer-text" data-translate-key="hero_timer_text">
-              Do rozpoczęcia kursu <br />
-              pozostało:
-            </p>
-            <div class="hero__timer-countdown">
-              <div class="hero__timer-block">
-                <span class="hero__timer-value" id="days">150</span>
-                <span
-                  class="hero__timer-label"
-                  data-translate-key="hero_timer_days"
-                  >Dni</span
-                >
-              </div>
-              <div class="hero__timer-block">
-                <span class="hero__timer-value" id="hours">10</span>
-                <span
-                  class="hero__timer-label"
-                  data-translate-key="hero_timer_hours"
-                  >Godzina</span
-                >
-              </div>
-              <span class="hero__timer-separator">:</span>
-              <div class="hero__timer-block">
-                <span class="hero__timer-value" id="minutes">01</span>
-                <span
-                  class="hero__timer-label"
-                  data-translate-key="hero_timer_minutes"
-                  >Chwila</span
-                >
-              </div>
-              <span class="hero__timer-separator">:</span>
-              <div class="hero__timer-block">
-                <span class="hero__timer-value" id="seconds">00</span>
-                <span
-                  class="hero__timer-label"
-                  data-translate-key="hero_timer_seconds"
-                  >Chwila</span
-                >
-              </div>
-            </div>
-            <p class="hero__timer-start" data-translate-key="hero_timer_start">
-              Zaczynamy <br />
-              1 września 2025 o 00:00
+  <section class="benefit" id="benefit">
+    <div class="container">
+      <div class="benefit-wrap">
+        <h2 class="title">Dlaczego warto spróbować?</h2>
+        <div class="steps">
+          <div class="step">
+            <div class="icon"></div>
+            <p>
+              Indywidualne podejście – nauczyciel dostosuje się do Twojego
+              poziomu i celów.
             </p>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="benefit" id="benefit">
-      <div class="container">
-        <div class="benefit-wrap">
-          <h2 class="title">Dlaczego warto spróbować?</h2>
-          <div class="steps">
-            <div class="step">
-              <div class="icon"></div>
-              <p>
-                Indywidualne podejście – nauczyciel dostosuje się do Twojego
-                poziomu i celów.
-              </p>
-            </div>
-            <div class="step">
-              <div class="icon"></div>
-              <p>Elastyczny harmonogram – wybierz dogodny czas zajęć.</p>
-            </div>
-            <div class="step">
-              <div class="icon"></div>
-              <p>
-                Brak zobowiązań – spróbuj i zdecyduj, czy nasz format Ci
-                odpowiada.
-              </p>
-            </div>
+          <div class="step">
+            <div class="icon"></div>
+            <p>Elastyczny harmonogram – wybierz dogodny czas zajęć.</p>
+          </div>
+          <div class="step">
+            <div class="icon"></div>
+            <p>
+              Brak zobowiązań – spróbuj i zdecyduj, czy nasz format Ci
+              odpowiada.
+            </p>
           </div>
         </div>
       </div>
-    </section>
-    <section class="how">
-      <div class="container">
-        <h1>Jak to działa?</h1>
+    </div>
+  </section>
+  
 
-        <div class="process-container">
-          <!-- Step 1 -->
-          <div class="step step-1">
-            <div class="form-illustration">
-              <div class="form-field"></div>
-              <div class="form-field"></div>
-              <div class="button-container">
-                <div class="yellow-button"></div>
-                <div class="cursor"></div>
-              </div>
-            </div>
-            <div class="step-content">
-              <p>
-                <strong>Zostaw zgłoszenie –</strong> podaj swoje imię i dane
-                kontaktowe.
-              </p>
-            </div>
-            <div class="dot dot-1"></div>
-          </div>
+  <script src="components/header/header.js"></script>
+  <script src="/src/js/hero.js"></script>
+  <script src="/src/js/translations.js"></script>
+</body>
 
-          <!-- Dashed line 1 -->
-          <div class="dashed-line line-1"></div>
-
-          <!-- Step 2 -->
-          <div class="step step-2">
-            <div class="teacher-illustration">
-              <div class="teacher-head"></div>
-              <div class="teacher-body"></div>
-              <div class="medal"></div>
-              <div class="stars">
-                <span class="star">★</span>
-                <span class="star">★</span>
-                <span class="star">★</span>
-              </div>
-            </div>
-            <div class="step-content">
-              <p>
-                <strong>Otrzymaj konsultację –</strong> dobierzemy dla Ciebie
-                idealnego lektora.
-              </p>
-            </div>
-            <div class="dot dot-2"></div>
-          </div>
-
-          <!-- Dashed line 2 -->
-          <div class="dashed-line line-2"></div>
-
-          <!-- Step 3 -->
-          <div class="step step-3">
-            <div class="laptop-illustration">
-              <div class="laptop-screen">
-                <div class="user-icon"></div>
-              </div>
-              <div class="laptop-base"></div>
-            </div>
-            <div class="step-content">
-              <h2 class="yellow-heading">Rozpocznij naukę</h2>
-              <p>
-                – wypróbuj 3 darmowe lekcje i zrób pierwszy krok do swobodnej
-                komunikacji po angielsku!
-              </p>
-            </div>
-            <div class="dot dot-3"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <script src="components/header/header.js"></script>
-
-    <script src="/src/js/translations.js"></script>
-  </body>
 </html>

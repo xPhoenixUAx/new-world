@@ -3,7 +3,7 @@
   align-items: center;
   gap: 10px;
   padding-bottom: 50px;
-  padding-top: 220px;
+  padding-top: 120px;
 }
 .position {
   font-family: var(--font-family);
@@ -148,7 +148,7 @@
   font-size: clamp(
     9.8px,
     1.12vw,
-    19.6px
+    16px
   ); /* Reduced from clamp(14px, 1.6vw, 28px) by 30% */
   line-height: 150%;
   color: #000;

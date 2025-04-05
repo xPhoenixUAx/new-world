@@ -1,927 +1,656 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/css/base.css" />
-    <link rel="stylesheet" href="./src/css/reset.css" />
-    <link rel="stylesheet" href="./src/css/main/hero.css" />
-    <link rel="stylesheet" href="./src/css/main/price.css" />
-    <link rel="stylesheet" href="./src/css/main/lessons.css" />
-    <link rel="stylesheet" href="./src/css/main/about.css" />
-    <link rel="stylesheet" href="./src/css/main/reviews.css" />
-    <link rel="stylesheet" href="/src/css/main/faq.css" />
-    <link rel="stylesheet" href="/src/css/contact.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <title>New World</title>
-  </head>
-  <body>
-    <main>
-      <section class="hero">
-        <div class="container">
-          <div class="hero__inner">
-            <div class="hero__content">
-              <h1 class="hero__title">
-                <span
-                  class="highlight"
-                  data-translate-key="hero_title_highlight"
-                  >Zacznij</span
-                >
-                <span data-translate-key="hero_title_middle">
-                  uczyć się języka z profesjonalnym korepetytorem
-                </span>
-                <span
-                  class="highlight_2"
-                  data-translate-key="hero_title_highlight_2"
-                  >już dziś!</span
-                >
-              </h1>
 
-              <p class="hero__subtitle" data-translate-key="hero_subtitle">
-                Indywidualne zajęcia, żywa rozmowa i elastyczne ceny.
-              </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/css/base.css" />
+  <link rel="stylesheet" href="./src/css/reset.css" />
+  <link rel="stylesheet" href="./src/css/main/hero.css" />
+  <link rel="stylesheet" href="./src/css/main/price.css" />
+  <link rel="stylesheet" href="./src/css/main/lessons.css" />
+  <link rel="stylesheet" href="./src/css/main/about.css" />
+  <link rel="stylesheet" href="./src/css/main/reviews.css" />
+  <link rel="stylesheet" href="/src/css/main/faq.css" />
+  <link rel="stylesheet" href="/src/css/contact.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <title>New World</title>
+</head>
 
-              <div class="hero__buttons">
-                <a
-                  href="./TryEnglish.html"
-                  class="hero__button hero__button--primary"
-                  data-translate-key="hero_button_free"
-                >
-                  Wypróbuj za darmo
-                </a>
-                <a
-                  href="#pricing"
-                  class="hero__button hero__button--secondary"
-                  data-translate-key="hero_button_plan"
-                >
-                  Wybierz taryfę
-                </a>
-              </div>
-            </div>
-            <div class="hero__image">
-              <img
-                src="./src/img/desk/hero-img-big.png"
-                alt="Hero Image"
-                data-translate-key="hero_image_alt"
-              />
+<body>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__inner">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              <span class="highlight" data-translate-key="hero_title_highlight">Zacznij</span>
+              <span data-translate-key="hero_title_middle">
+                uczyć się języka z profesjonalnym korepetytorem
+              </span>
+              <span class="highlight_2" data-translate-key="hero_title_highlight_2">już dziś!</span>
+            </h1>
+
+            <p class="hero__subtitle" data-translate-key="hero_subtitle">
+              Indywidualne zajęcia, żywa rozmowa i elastyczne ceny.
+            </p>
+
+            <div class="hero__buttons">
+              <a href="./TryEnglish.html" class="hero__button hero__button--primary"
+                data-translate-key="hero_button_free">
+                Wypróbuj za darmo
+              </a>
+              <a href="#pricing" class="hero__button hero__button--secondary" data-translate-key="hero_button_plan">
+                Wybierz taryfę
+              </a>
             </div>
           </div>
-          <div class="hero__timer">
-            <div class="hero__timer-content">
-              <p class="hero__timer-text" data-translate-key="hero_timer_text">
-                Do rozpoczęcia kursu <br />
-                pozostało:
-              </p>
-              <div class="hero__timer-countdown">
-                <div class="hero__timer-block">
-                  <span class="hero__timer-value" id="days">150</span>
-                  <span
-                    class="hero__timer-label"
-                    data-translate-key="hero_timer_days"
-                    >Dni</span
-                  >
-                </div>
-                <div class="hero__timer-block">
-                  <span class="hero__timer-value" id="hours">10</span>
-                  <span
-                    class="hero__timer-label"
-                    data-translate-key="hero_timer_hours"
-                    >Godzina</span
-                  >
-                </div>
-                <span class="hero__timer-separator">:</span>
-                <div class="hero__timer-block">
-                  <span class="hero__timer-value" id="minutes">01</span>
-                  <span
-                    class="hero__timer-label"
-                    data-translate-key="hero_timer_minutes"
-                    >Chwila</span
-                  >
-                </div>
-                <span class="hero__timer-separator">:</span>
-                <div class="hero__timer-block">
-                  <span class="hero__timer-value" id="seconds">00</span>
-                  <span
-                    class="hero__timer-label"
-                    data-translate-key="hero_timer_seconds"
-                    >Chwila</span
-                  >
-                </div>
+          <div class="hero__image">
+            <img src="./src/img/desk/hero-img-big.png" alt="Hero Image" data-translate-key="hero_image_alt" />
+          </div>
+        </div>
+        <div class="hero__timer">
+          <div class="hero__timer-content">
+            <p class="hero__timer-text" data-translate-key="hero_timer_text">
+              Do rozpoczęcia kursu <br />
+              pozostało:
+            </p>
+            <div class="hero__timer-countdown">
+              <div class="hero__timer-block">
+                <span class="hero__timer-value" id="days">150</span>
+                <span class="hero__timer-label" data-translate-key="hero_timer_days">Dni</span>
               </div>
-              <p
-                class="hero__timer-start"
-                data-translate-key="hero_timer_start"
-              >
-                Zaczynamy <br />
-                1 września 2025 o 00:00
-              </p>
+              <div class="hero__timer-block">
+                <span class="hero__timer-value" id="hours">10</span>
+                <span class="hero__timer-label" data-translate-key="hero_timer_hours">Godzina</span>
+              </div>
+              <span class="hero__timer-separator">:</span>
+              <div class="hero__timer-block">
+                <span class="hero__timer-value" id="minutes">01</span>
+                <span class="hero__timer-label" data-translate-key="hero_timer_minutes">Chwila</span>
+              </div>
+              <span class="hero__timer-separator">:</span>
+              <div class="hero__timer-block">
+                <span class="hero__timer-value" id="seconds">00</span>
+                <span class="hero__timer-label" data-translate-key="hero_timer_seconds">Chwila</span>
+              </div>
+            </div>
+            <p class="hero__timer-start" data-translate-key="hero_timer_start">
+              Zaczynamy <br />
+              1 września 2025 o 00:00
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lessons">
+      <div class="container">
+        <h2 class="lessons__title" data-translate-key="lessons_title">
+          Chcesz swobodnie mówić po angielsku? Nasz zespół oferuje komfortowe
+          i skuteczne zajęcia dla wszystkich poziomów.
+        </h2>
+        <p class="lessons__subtitle" data-translate-key="lessons_subtitle">
+          Wybierz dogodny format:
+        </p>
+        <div class="lessons__row lessons__row--two">
+          <div class="lessons__item lessons__item--yellow" data-modal="modal-1">
+            <div class="lessons__header">
+              <h3 class="lessons__header-title" data-translate-key="lessons_card_online_title">
+                Indywidualne i grupowe lekcje z lektorem online
+              </h3>
+              <span class="lessons__arrow"></span>
+            </div>
+          </div>
+          <div class="lessons__image-wrapper">
+            <img src="./src/img/desk/services/1.png" alt="Online Lessons" class="lessons__image"
+              data-translate-key="lessons_card_online_image_alt" />
+          </div>
+        </div>
+        <div class="lessons__row lessons__row--three">
+          <div class="lessons__image-wrapper">
+            <img src="./src/img/desk/services/2.png" alt="Stationary Lessons 1" class="lessons__image"
+              data-translate-key="lessons_card_stationary_image_alt_1" />
+          </div>
+          <div class="lessons__item lessons__item--purple" data-modal="modal-2">
+            <div class="lessons__header">
+              <h3 class="lessons__header-title" data-translate-key="lessons_card_stationary_title_1">
+                Zajęcia grupowe stacjonarne
+              </h3>
+              <span class="lessons__arrow"></span>
+            </div>
+          </div>
+          <div class="lessons__image-wrapper">
+            <img src="./src/img/desk/services/3.png" alt="Stationary Lessons 2" class="lessons__image"
+              data-translate-key="lessons_card_stationary_image_alt_2" />
+          </div>
+        </div>
+        <div class="lessons__row lessons__row--two">
+          <div class="lessons__image-wrapper">
+            <img src="./src/img/desk/services/4.png" alt="Office Lessons" class="lessons__image"
+              data-translate-key="lessons_card_office_image_alt" />
+          </div>
+          <div class="lessons__item lessons__item--yellow" data-modal="modal-3">
+            <div class="lessons__header">
+              <h3 class="lessons__header-title" data-translate-key="lessons_card_office_title">
+                Korporacyjne angielski z dojazdem lektora do biura
+              </h3>
+              <span class="lessons__arrow"></span>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section class="lessons">
-        <div class="container">
-          <h2 class="lessons__title" data-translate-key="lessons_title">
-            Chcesz swobodnie mówić po angielsku? Nasz zespół oferuje komfortowe
-            i skuteczne zajęcia dla wszystkich poziomów.
-          </h2>
-          <p class="lessons__subtitle" data-translate-key="lessons_subtitle">
-            Wybierz dogodny format:
+      <div class="modal" id="modal-1">
+        <div class="modal__content modal__content--yellow">
+          <span class="modal__close">×</span>
+          <h3 class="modal__title" data-translate-key="lessons_card_online_title">
+            Indywidualne i grupowe lekcje z lektorem online
+          </h3>
+          <p class="modal__description" data-translate-key="lessons_card_online_subtitle">
+            Nasze zajęcia online z doświadczonym nauczycielem pomogą Ci szybko
+            opanować język angielski w wygodnym formacie.
           </p>
-          <div class="lessons__row lessons__row--two">
-            <div
-              class="lessons__item lessons__item--yellow"
-              data-modal="modal-1"
-            >
-              <div class="lessons__header">
-                <h3
-                  class="lessons__header-title"
-                  data-translate-key="lessons_card_online_title"
-                >
-                  Indywidualne i grupowe lekcje z lektorem online
-                </h3>
-                <span class="lessons__arrow"></span>
-              </div>
+          <div class="modal__inner">
+            <div class="modal__text">
+              <ul class="modal__list">
+                <li data-translate-key="lessons_card_online_item_1">
+                  Indywidualne lekcje – spersonalizowany program nauki
+                  dopasowany do Twoich celów, elastyczny harmonogram.
+                </li>
+                <li data-translate-key="lessons_card_online_item_2">
+                  Zajęcia grupowe – interaktywna nauka w małych grupach, żywa
+                  komunikacja i wsparcie zespołu.
+                </li>
+                <li data-translate-key="lessons_card_online_item_3">
+                  Wszystkie zajęcia odbywają się online, z wykorzystaniem
+                  nowoczesnych metod, interaktywnych materiałów i praktyki
+                  konwersacyjnej. Wybierz dogodny format i zacznij naukę już
+                  dziś!
+                </li>
+              </ul>
             </div>
-            <div class="lessons__image-wrapper">
-              <img
-                src="./src/img/desk/services/1.png"
-                alt="Online Lessons"
-                class="lessons__image"
-                data-translate-key="lessons_card_online_image_alt"
-              />
-            </div>
-          </div>
-          <div class="lessons__row lessons__row--three">
-            <div class="lessons__image-wrapper">
-              <img
-                src="./src/img/desk/services/2.png"
-                alt="Stationary Lessons 1"
-                class="lessons__image"
-                data-translate-key="lessons_card_stationary_image_alt_1"
-              />
-            </div>
-            <div
-              class="lessons__item lessons__item--purple"
-              data-modal="modal-2"
-            >
-              <div class="lessons__header">
-                <h3
-                  class="lessons__header-title"
-                  data-translate-key="lessons_card_stationary_title_1"
-                >
-                  Zajęcia grupowe stacjonarne
-                </h3>
-                <span class="lessons__arrow"></span>
-              </div>
-            </div>
-            <div class="lessons__image-wrapper">
-              <img
-                src="./src/img/desk/services/3.png"
-                alt="Stationary Lessons 2"
-                class="lessons__image"
-                data-translate-key="lessons_card_stationary_image_alt_2"
-              />
+            <div class="modal__image-wrapper">
+              <img src="./src/img/desk/services/modal1.png" alt="Online Lessons" class="modal__image"
+                data-translate-key="lessons_card_online_modal_image_alt" />
             </div>
           </div>
-          <div class="lessons__row lessons__row--two">
-            <div class="lessons__image-wrapper">
-              <img
-                src="./src/img/desk/services/4.png"
-                alt="Office Lessons"
-                class="lessons__image"
-                data-translate-key="lessons_card_office_image_alt"
-              />
-            </div>
-            <div
-              class="lessons__item lessons__item--yellow"
-              data-modal="modal-3"
-            >
-              <div class="lessons__header">
-                <h3
-                  class="lessons__header-title"
-                  data-translate-key="lessons_card_office_title"
-                >
-                  Korporacyjne angielski z dojazdem lektora do biura
-                </h3>
-                <span class="lessons__arrow"></span>
-              </div>
-            </div>
-          </div>
+          <button class="modal__button" data-form="form-modal" data-translate-key="modal_button_sign_up">
+            Zapisz się
+          </button>
         </div>
+      </div>
 
-        <div class="modal" id="modal-1">
-          <div class="modal__content modal__content--yellow">
-            <span class="modal__close">×</span>
-            <h3
-              class="modal__title"
-              data-translate-key="lessons_card_online_title"
-            >
-              Indywidualne i grupowe lekcje z lektorem online
-            </h3>
-            <p
-              class="modal__description"
-              data-translate-key="lessons_card_online_subtitle"
-            >
-              Nasze zajęcia online z doświadczonym nauczycielem pomogą Ci szybko
-              opanować język angielski w wygodnym formacie.
+      <div class="modal" id="modal-2">
+        <div class="modal__content modal__content--purple">
+          <span class="modal__close">×</span>
+          <h3 class="modal__title" data-translate-key="lessons_card_stationary_title_1">
+            Zajęcia grupowe stacjonarne
+          </h3>
+          <p class="modal__description" data-translate-key="lessons_card_stationary_subtitle_1">
+            Zanurz się w naukę angielskiego w komfortowej atmosferze!
+          </p>
+          <div class="modal__inner">
+            <div class="modal__text">
+              <ul class="modal__list">
+                <li data-translate-key="lessons_card_stationary_item_1_1">
+                  Nauka w małych grupach – żywa komunikacja, wsparcie i
+                  motywacja.
+                </li>
+                <li data-translate-key="lessons_card_stationary_item_1_2">
+                  Dostosowane materiały – nowoczesne metody interaktywnej
+                  nauki.
+                </li>
+                <li data-translate-key="lessons_card_stationary_item_1_3">
+                  Praktyka w czasie rzeczywistym – rozwijanie umiejętności
+                  konwersacyjnych w przyjaznej atmosferze.
+                </li>
+                <li data-translate-key="lessons_card_stationary_item_1_4">
+                  Zajęcia odbywają się w wygodnych salach lekcyjnych, gdzie
+                  możesz efektywnie się uczyć i swobodnie komunikować po
+                  angielsku bez stresu. Dołącz, rozwijaj swoje umiejętności
+                  razem z innymi!
+                </li>
+              </ul>
+            </div>
+            <div class="modal__image-wrapper">
+              <img src="./src/img/desk/services/modal2.png" alt="Stationary Lessons" class="modal__image"
+                data-translate-key="lessons_card_stationary_modal_image_alt" />
+            </div>
+          </div>
+          <button class="modal__button" data-form="form-modal" data-translate-key="modal_button_sign_up">
+            Zapisz się
+          </button>
+        </div>
+      </div>
+
+      <div class="modal" id="modal-3">
+        <div class="modal__content modal__content--yellow">
+          <span class="modal__close">×</span>
+          <h3 class="modal__title" data-translate-key="lessons_card_office_title">
+            Korporacyjne angielski z dojazdem lektora do biura
+          </h3>
+          <p class="modal__description" data-translate-key="lessons_card_office_subtitle">
+            Oferta dla firm, które chcą rozwijać umiejętności językowe swoich
+            pracowników bez pośredników w biurze!
+          </p>
+          <div class="modal__inner">
+            <div class="modal__text">
+              <ul class="modal__list">
+                <li data-translate-key="lessons_card_office_item_1">
+                  Lekcje w Twoim biurze – wygodny format nauki bez
+                  konieczności wychodzenia z procesu pracy.
+                </li>
+                <li data-translate-key="lessons_card_office_item_2">
+                  Indywidualne podejście – zajęcia dopasowane do potrzeb i
+                  poziomu pracowników Twojej firmy.
+                </li>
+                <li data-translate-key="lessons_card_office_item_3">
+                  Elastyczny harmonogram – możliwość zorganizowania zajęć w
+                  dogodnym czasie dla zespołu.
+                </li>
+                <li data-translate-key="lessons_card_office_item_4">
+                  Nasi nauczyciele przyjadą do Twojego biura, zapewniając
+                  komfortową i efektywną naukę języka angielskiego dla Twojego
+                  zespołu.
+                </li>
+              </ul>
+            </div>
+            <div class="modal__image-wrapper">
+              <img src="./src/img/desk/services/modal3.png" alt="Office Lessons" class="modal__image"
+                data-translate-key="lessons_card_office_modal_image_alt" />
+            </div>
+          </div>
+          <button class="modal__button" data-form="form-modal" data-translate-key="modal_button_sign_up">
+            Zapisz się
+          </button>
+        </div>
+      </div>
+
+      <div class="modal" id="form-modal">
+        <div class="modal__content modal__content--yellow">
+          <span class="modal__close">×</span>
+          <h3 class="modal__title" data-translate-key="form_title">
+            Форма записи
+          </h3>
+          <form class="modal__form" action="send-mail.php" method="POST">
+            <label class="modal__label">
+              <input type="text" name="name" placeholder="Imię" required data-translate-key="form_name_placeholder" />
+            </label>
+            <label class="modal__label">
+              <input type="tel" name="phone" placeholder="Telefon" required
+                data-translate-key="form_phone_placeholder" />
+            </label>
+            <label class="modal__label">
+              <input type="email" name="email" placeholder="E-mail" required
+                data-translate-key="form_email_placeholder" />
+            </label>
+            <p class="modal__form-note" data-translate-key="form_note">
+              Wypełniając formularz i przesyłając swoje dane, wyrażasz zgodę
+              na ich przetwarzanie zgodnie z Polityką Prywatności.
             </p>
-            <div class="modal__inner">
-              <div class="modal__text">
-                <ul class="modal__list">
-                  <li data-translate-key="lessons_card_online_item_1">
-                    Indywidualne lekcje – spersonalizowany program nauki
-                    dopasowany do Twoich celów, elastyczny harmonogram.
-                  </li>
-                  <li data-translate-key="lessons_card_online_item_2">
-                    Zajęcia grupowe – interaktywna nauka w małych grupach, żywa
-                    komunikacja i wsparcie zespołu.
-                  </li>
-                  <li data-translate-key="lessons_card_online_item_3">
-                    Wszystkie zajęcia odbywają się online, z wykorzystaniem
-                    nowoczesnych metod, interaktywnych materiałów i praktyki
-                    konwersacyjnej. Wybierz dogodny format i zacznij naukę już
-                    dziś!
-                  </li>
-                </ul>
-              </div>
-              <div class="modal__image-wrapper">
-                <img
-                  src="./src/img/desk/services/modal1.png"
-                  alt="Online Lessons"
-                  class="modal__image"
-                  data-translate-key="lessons_card_online_modal_image_alt"
-                />
-              </div>
-            </div>
-            <button
-              class="modal__button"
-              data-form="form-modal"
-              data-translate-key="modal_button_sign_up"
-            >
-              Zapisz się
+            <button type="submit" class="modal__button" data-translate-key="form_submit_button">
+              Wyślij
             </button>
-          </div>
+          </form>
         </div>
+      </div>
 
-        <div class="modal" id="modal-2">
-          <div class="modal__content modal__content--purple">
-            <span class="modal__close">×</span>
-            <h3
-              class="modal__title"
-              data-translate-key="lessons_card_stationary_title_1"
-            >
-              Zajęcia grupowe stacjonarne
-            </h3>
-            <p
-              class="modal__description"
-              data-translate-key="lessons_card_stationary_subtitle_1"
-            >
-              Zanurz się w naukę angielskiego w komfortowej atmosferze!
-            </p>
-            <div class="modal__inner">
-              <div class="modal__text">
-                <ul class="modal__list">
-                  <li data-translate-key="lessons_card_stationary_item_1_1">
-                    Nauka w małych grupach – żywa komunikacja, wsparcie i
-                    motywacja.
-                  </li>
-                  <li data-translate-key="lessons_card_stationary_item_1_2">
-                    Dostosowane materiały – nowoczesne metody interaktywnej
-                    nauki.
-                  </li>
-                  <li data-translate-key="lessons_card_stationary_item_1_3">
-                    Praktyka w czasie rzeczywistym – rozwijanie umiejętności
-                    konwersacyjnych w przyjaznej atmosferze.
-                  </li>
-                  <li data-translate-key="lessons_card_stationary_item_1_4">
-                    Zajęcia odbywają się w wygodnych salach lekcyjnych, gdzie
-                    możesz efektywnie się uczyć i swobodnie komunikować po
-                    angielsku bez stresu. Dołącz, rozwijaj swoje umiejętności
-                    razem z innymi!
-                  </li>
-                </ul>
-              </div>
-              <div class="modal__image-wrapper">
-                <img
-                  src="./src/img/desk/services/modal2.png"
-                  alt="Stationary Lessons"
-                  class="modal__image"
-                  data-translate-key="lessons_card_stationary_modal_image_alt"
-                />
-              </div>
+      <div class="modal" id="success-modal">
+        <div class="modal__content modal__content--yellow">
+          <span class="modal__success-icon">✔</span>
+          <h3 class="modal__title" data-translate-key="success_message">
+            Dziękujemy za zgłoszenie!
+          </h3>
+          <p class="modal__description" data-translate-key="success_description">
+            Nasz specjalista skontaktuje się z Tobą w najbliższym czasie.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-wrap">
+          <div class="head-block">
+            <div class="img-block">
+              <picture>
+                <source media="(max-width: 768px)" srcset="/src/img/mobile/why/girl-why.png" />
+                <source media="(min-width: 769px)" srcset="/src/img/desk/why/Img.png" />
+                <img src="default-image.jpg" alt="Why Us Image" data-translate-key="about_image_alt" />
+              </picture>
             </div>
-            <button
-              class="modal__button"
-              data-form="form-modal"
-              data-translate-key="modal_button_sign_up"
-            >
-              Zapisz się
-            </button>
-          </div>
-        </div>
-
-        <div class="modal" id="modal-3">
-          <div class="modal__content modal__content--yellow">
-            <span class="modal__close">×</span>
-            <h3
-              class="modal__title"
-              data-translate-key="lessons_card_office_title"
-            >
-              Korporacyjne angielski z dojazdem lektora do biura
-            </h3>
-            <p
-              class="modal__description"
-              data-translate-key="lessons_card_office_subtitle"
-            >
-              Oferta dla firm, które chcą rozwijać umiejętności językowe swoich
-              pracowników bez pośredników w biurze!
-            </p>
-            <div class="modal__inner">
-              <div class="modal__text">
-                <ul class="modal__list">
-                  <li data-translate-key="lessons_card_office_item_1">
-                    Lekcje w Twoim biurze – wygodny format nauki bez
-                    konieczności wychodzenia z procesu pracy.
-                  </li>
-                  <li data-translate-key="lessons_card_office_item_2">
-                    Indywidualne podejście – zajęcia dopasowane do potrzeb i
-                    poziomu pracowników Twojej firmy.
-                  </li>
-                  <li data-translate-key="lessons_card_office_item_3">
-                    Elastyczny harmonogram – możliwość zorganizowania zajęć w
-                    dogodnym czasie dla zespołu.
-                  </li>
-                  <li data-translate-key="lessons_card_office_item_4">
-                    Nasi nauczyciele przyjadą do Twojego biura, zapewniając
-                    komfortową i efektywną naukę języka angielskiego dla Twojego
-                    zespołu.
-                  </li>
-                </ul>
-              </div>
-              <div class="modal__image-wrapper">
-                <img
-                  src="./src/img/desk/services/modal3.png"
-                  alt="Office Lessons"
-                  class="modal__image"
-                  data-translate-key="lessons_card_office_modal_image_alt"
-                />
-              </div>
-            </div>
-            <button
-              class="modal__button"
-              data-form="form-modal"
-              data-translate-key="modal_button_sign_up"
-            >
-              Zapisz się
-            </button>
-          </div>
-        </div>
-
-        <div class="modal" id="form-modal">
-          <div class="modal__content modal__content--yellow">
-            <span class="modal__close">×</span>
-            <h3 class="modal__title" data-translate-key="form_title">
-              Форма записи
-            </h3>
-            <form class="modal__form" action="send-mail.php" method="POST">
-              <label class="modal__label">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Imię"
-                  required
-                  data-translate-key="form_name_placeholder"
-                />
-              </label>
-              <label class="modal__label">
-                <input
-                  type="tel"
-                  name="phone"
-                  placeholder="Telefon"
-                  required
-                  data-translate-key="form_phone_placeholder"
-                />
-              </label>
-              <label class="modal__label">
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="E-mail"
-                  required
-                  data-translate-key="form_email_placeholder"
-                />
-              </label>
-              <p class="modal__form-note" data-translate-key="form_note">
-                Wypełniając formularz i przesyłając swoje dane, wyrażasz zgodę
-                na ich przetwarzanie zgodnie z Polityką Prywatności.
+            <div class="head-text-cont">
+              <h2 class="about-heading" data-translate-key="about_title">
+                Dlaczego właśnie my?
+              </h2>
+              <p class="about-text" data-translate-key="about_description">
+                Indywidualne podejście do każdego ucznia – Twoja szybka droga
+                do swobodnego angielskiego!
               </p>
-              <button
-                type="submit"
-                class="modal__button"
-                data-translate-key="form_submit_button"
-              >
+              <a href="#" class="about-btn" data-translate-key="about_button">
+                Wypróbuj za darmo
+              </a>
+            </div>
+          </div>
+          <ul class="about-list">
+            <li class="about-item about-item-1">
+              <h3 class="item-head" data-translate-key="about_card_1_title">
+                Tylko wykwalifikowani nauczyciele i native speakerzy
+              </h3>
+              <p class="item-text" data-translate-key="about_card_1_description">
+                Doświadczeni nauczyciele i native speakerzy pomogą Ci mówić
+                pewnie i poprawnie!
+              </p>
+            </li>
+            <li class="about-item about-item-2">
+              <h3 class="item-head" data-translate-key="about_card_2_title">
+                Wygodna forma zajęć online
+              </h3>
+              <p class="item-text" data-translate-key="about_card_2_description">
+                Ucz się w dowolnym czasie i w dogodnym dla Ciebie miejscu
+                dzięki naszemu formatowi online.
+              </p>
+            </li>
+            <li class="about-item about-item-3">
+              <h3 class="item-head" data-translate-key="about_card_3_title">
+                Elastyczny harmonogram i przystępne ceny
+              </h3>
+              <p class="item-text" data-translate-key="about_card_3_description">
+                Wybierz dogodne godziny zajęć i ciesz się wysoką jakością
+                nauki w przystępnej cenie.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="price-section" id="price">
+      <div class="container">
+        <div class="head-price">
+          <h2 class="price-heading" data-translate-key="price_heading">
+            Cenniki
+          </h2>
+          <p class="price-text" data-translate-key="price_text">
+            Każdy plan obejmuje dostęp do platformy online, czat z
+            nauczycielem i panel użytkownika.
+          </p>
+        </div>
+        <div class="card-box">
+          <div class="card">
+            <div class="edit-button">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17 3C17.2626 2.73735 17.5744 2.52901 17.9176 2.38687C18.2608 2.24473 18.6286 2.17157 19 2.17157C19.3714 2.17157 19.7392 2.24473 20.0824 2.38687C20.4256 2.52901 20.7374 2.73735 21 3C21.2626 3.26264 21.471 3.57444 21.6131 3.9176C21.7553 4.26077 21.8284 4.62856 21.8284 5C21.8284 5.37143 21.7553 5.73923 21.6131 6.08239C21.471 6.42555 21.2626 6.73735 21 7L7.5 20.5L2 22L3.5 16.5L17 3Z"
+                  stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h1 class="title" data-translate-key="price_card_1_title">
+              "Standardowy"
+            </h1>
+            <div class="classes">
+              <span data-translate-key="price_card_1_classes">4 zajęć</span>
+              <span class="monthly" data-translate-key="price_card_1_monthly">miesięcznie</span>
+            </div>
+            <p class="description" data-translate-key="price_card_1_description">
+              Dla tych, którzy chcą systematycznie poprawiać swój poziom
+              angielskiego.
+            </p>
+            <div class="price" data-translate-key="price_card_1_price">
+              49 €
+            </div>
+          </div>
+          <div class="card mid">
+            <div class="edit-button">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17 3C17.2626 2.73735 17.5744 2.52901 17.9176 2.38687C18.2608 2.24473 18.6286 2.17157 19 2.17157C19.3714 2.17157 19.7392 2.24473 20.0824 2.38687C20.4256 2.52901 20.7374 2.73735 21 3C21.2626 3.26264 21.471 3.57444 21.6131 3.9176C21.7553 4.26077 21.8284 4.62856 21.8284 5C21.8284 5.37143 21.7553 5.73923 21.6131 6.08239C21.471 6.42555 21.2626 6.73735 21 7L7.5 20.5L2 22L3.5 16.5L17 3Z"
+                  stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h1 class="title" data-translate-key="price_card_2_title">
+              "Próbny"
+            </h1>
+            <div class="access" data-translate-key="price_card_2_access">
+              3 dni darmowego dostępu
+            </div>
+            <div class="classes" data-translate-key="price_card_2_classes">
+              1 zajęcia + testowanie
+            </div>
+            <p class="description" data-translate-key="price_card_2_description">
+              Idealne dla tych, którzy chcą wypróbować format zajęć przed
+              wyborem planu.
+            </p>
+            <div class="price" data-translate-key="price_card_2_price">
+              Za darmo
+            </div>
+          </div>
+          <div class="card">
+            <div class="edit-button">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17 3C17.2626 2.73735 17.5744 2.52901 17.9176 2.38687C18.2608 2.24473 18.6286 2.17157 19 2.17157C19.3714 2.17157 19.7392 2.24473 20.0824 2.38687C20.4256 2.52901 20.7374 2.73735 21 3C21.2626 3.26264 21.471 3.57444 21.6131 3.9176C21.7553 4.26077 21.8284 4.62856 21.8284 5C21.8284 5.37143 21.7553 5.73923 21.6131 6.08239C21.471 6.42555 21.2626 6.73735 21 7L7.5 20.5L2 22L3.5 16.5L17 3Z"
+                  stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <h1 class="title" data-translate-key="price_card_3_title">
+              "Premium"
+            </h1>
+            <div class="classes">
+              <span data-translate-key="price_card_3_classes">8 zajęć</span>
+              <span class="monthly" data-translate-key="price_card_3_monthly">miesięcznie</span>
+            </div>
+            <div class="additional" data-translate-key="price_card_3_additional">
+              + indywidualne zadania
+            </div>
+            <p class="description" data-translate-key="price_card_3_description">
+              Dla osób, które dążą do szybkich postępów i głębszego
+              przyswajania materiału.
+            </p>
+            <div class="price" data-translate-key="price_card_3_price">
+              89 €
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="reviews-section">
+      <div class="container">
+        <div class="bordered-content">
+          <h2 data-translate-key="reviews_title">Opinie naszych uczniów</h2>
+          <div class="reviews-container">
+            <div class="review-card light-purple">
+              <div class="review-content">
+                <span class="quote-icon"></span>
+                <p class="review-text" data-translate-key="review_1_text">
+                  Zajęcia tutaj to czysta przyjemność! Nauczyciele są uważni,
+                  lekko zawsze interesujące. Już widzę postępy!
+                </p>
+              </div>
+              <div class="review-author">
+                <img src="/src/img/desk/reviews/magda.png" alt="Anna" class="author-img" />
+                <span data-translate-key="review_1_author">Anna</span>
+              </div>
+            </div>
+            <div class="review-image">
+              <img src="/src/img/desk/reviews/student.png" alt="Student with books"
+                data-translate-key="review_image_alt" />
+            </div>
+            <div class="review-card black">
+              <div class="review-content">
+                <span class="quote-icon"></span>
+                <p class="review-text" data-translate-key="review_2_text">
+                  Elastyczne ceny polecamy i przystępne ceny. Polecam
+                  wszystkim, którzy chcą się учить английского в комфортовых
+                  условиях!
+                </p>
+              </div>
+              <div class="review-author">
+                <img src="/src/img/desk/reviews/Image-60.png" alt="Dmitrij" class="author-img" />
+                <span data-translate-key="review_2_author">Dmitrij</span>
+              </div>
+            </div>
+            <div class="review-card light-purple">
+              <div class="review-content">
+                <span class="quote-icon"></span>
+                <p class="review-text" data-translate-key="review_3_text">
+                  Niesamowite doświadczenie! Nauczyciele dostosowują się do
+                  potrzeb uczniów, zajęcia zawsze są ciekawe.
+                </p>
+              </div>
+              <div class="review-author">
+                <img src="/src/img/desk/reviews/anna.png" alt="Magda" class="author-img" />
+                <span data-translate-key="review_3_author">Magda</span>
+              </div>
+            </div>
+          </div>
+          <div class="navigation-arrows">
+            <button class="arrow left-arrow">←</button>
+            <button class="arrow right-arrow">→</button>
+          </div>
+          <div class="indicators">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq-section" id="faq">
+      <div class="container">
+        <div class="faq-wrap">
+          <div class="faq-content">
+            <h2 class="faq-heading" data-translate-key="faq_title">FAQ</h2>
+            <div class="faq-list">
+              <div class="faq-item">
+                <div class="faq-question">
+                  <span data-translate-key="faq_question_1">Jak wygląda nauka?</span>
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p data-translate-key="faq_answer_1">
+                    Nauka odbywa się w wygodnym formacie online lub
+                    stacjonarnie. Lekcje prowadzą doświadczeni lektorzy, a
+                    program jest dostosowany do Twojego poziomu i celu.
+                    Otrzymujesz dostęp do platformy edukacyjnej, czatu z
+                    nauczycielem i indywidualnych materiałów do nauki.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question">
+                  <span data-translate-key="faq_question_2">Jak wybrać odpowiedniego nauczyciela?</span>
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p data-translate-key="faq_answer_2">
+                    Dobieramy nauczyciela na podstawie Twojego poziomu, celu i
+                    preferencji. Możesz również skorystać z lekcji próbnej,
+                    aby sprawdzić, czy nauczyciel z wybranych opcji jest dla
+                    Ciebie komfortowa.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question">
+                  <span data-translate-key="faq_question_3">Czy otrzymam certyfikat po ukończeniu kursu?</span>
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p data-translate-key="faq_answer_3">
+                    Tak, po ukończeniu kursu otrzymasz certyfikat
+                    potwierdzający Twój poziom językowy i zdobyte
+                    umiejętności.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question">
+                  <span data-translate-key="faq_question_4">Czy można zmienić harmonogram zajęć?</span>
+                  <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p data-translate-key="faq_answer_4">
+                    Tak, istnieje możliwość zmiany harmonogramu zajęć.
+                    Wystarczy skontaktować się z lektorem lub administracją,
+                    aby ustalić nowe, dogodne terminy.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="faq-image">
+            <img src="/src/img/desk/reviews/pretty-girl.png" alt="Student smiling" data-translate-key="faq_image_alt"
+              width="400" height="565" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact" id="contact">
+      <div class="container">
+        <div class="wrap">
+          <div class="left-block">
+            <div class="left-wrap">
+              <h2 class="left-text" data-translate-key="contact_left_text">
+                Zacznij naukę od darmowej lekcji!
+              </h2>
+            </div>
+            <div class="img-wrap">
+              <img class="contact-img" src="/src/img/desk/pretty-student-with-curly-hair-standing-smiling.png"
+                alt="Student smiling" loading="lazy" data-translate-key="contact_image_alt" />
+            </div>
+          </div>
+          <div class="right-block">
+            <h3 class="right-head" data-translate-key="contact_right_head">
+              Zrób krok bliżej do swojego celu!
+            </h3>
+            <p class="right-text" data-translate-key="contact_right_text">
+              Wypełnij formularz, a nasz specjalista zapisze Cię na 3 darmowe
+              lekcje!
+            </p>
+            <form class="modal__form" action="send-mail.php" method="POST">
+              <div class="modal__label">
+                <label for="name" class="sr-only" data-translate-key="form_name_label">Imię</label>
+                <input type="text" id="name" name="name" placeholder="Imię" required
+                  data-translate-key="form_name_placeholder" />
+              </div>
+              <div class="modal__label">
+                <label for="phone" class="sr-only" data-translate-key="form_phone_label">Telefon</label>
+                <input type="tel" id="phone" name="phone" placeholder="Telefon" required
+                  data-translate-key="form_phone_placeholder" />
+              </div>
+              <div class="modal__label">
+                <label for="email" class="sr-only" data-translate-key="form_email_label">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="E-mail" required
+                  data-translate-key="form_email_placeholder" />
+              </div>
+              <button type="submit" class="modal__button" data-translate-key="form_submit_button">
                 Wyślij
               </button>
             </form>
           </div>
         </div>
+      </div>
+    </section>
+  </main>
 
-        <div class="modal" id="success-modal">
-          <div class="modal__content modal__content--yellow">
-            <span class="modal__success-icon">✔</span>
-            <h3 class="modal__title" data-translate-key="success_message">
-              Dziękujemy za zgłoszenie!
-            </h3>
-            <p
-              class="modal__description"
-              data-translate-key="success_description"
-            >
-              Nasz specjalista skontaktuje się z Tobą w najbliższym czasie.
-            </p>
-          </div>
-        </div>
-      </section>
+  <script src="components/header/header.js"></script>
 
-      <section id="about" class="about">
-        <div class="container">
-          <div class="about-wrap">
-            <div class="head-block">
-              <div class="img-block">
-                <picture>
-                  <source
-                    media="(max-width: 768px)"
-                    srcset="/src/img/mobile/why/girl-why.png"
-                  />
-                  <source
-                    media="(min-width: 769px)"
-                    srcset="/src/img/desk/why/Img.png"
-                  />
-                  <img
-                    src="default-image.jpg"
-                    alt="Why Us Image"
-                    data-translate-key="about_image_alt"
-                  />
-                </picture>
-              </div>
-              <div class="head-text-cont">
-                <h2 class="about-heading" data-translate-key="about_title">
-                  Dlaczego właśnie my?
-                </h2>
-                <p class="about-text" data-translate-key="about_description">
-                  Indywidualne podejście do każdego ucznia – Twoja szybka droga
-                  do swobodnego angielskiego!
-                </p>
-                <a href="#" class="about-btn" data-translate-key="about_button">
-                  Wypróbuj za darmo
-                </a>
-              </div>
-            </div>
-            <ul class="about-list">
-              <li class="about-item about-item-1">
-                <h3 class="item-head" data-translate-key="about_card_1_title">
-                  Tylko wykwalifikowani nauczyciele i native speakerzy
-                </h3>
-                <p
-                  class="item-text"
-                  data-translate-key="about_card_1_description"
-                >
-                  Doświadczeni nauczyciele i native speakerzy pomogą Ci mówić
-                  pewnie i poprawnie!
-                </p>
-              </li>
-              <li class="about-item about-item-2">
-                <h3 class="item-head" data-translate-key="about_card_2_title">
-                  Wygodna forma zajęć online
-                </h3>
-                <p
-                  class="item-text"
-                  data-translate-key="about_card_2_description"
-                >
-                  Ucz się w dowolnym czasie i w dogodnym dla Ciebie miejscu
-                  dzięki naszemu formatowi online.
-                </p>
-              </li>
-              <li class="about-item about-item-3">
-                <h3 class="item-head" data-translate-key="about_card_3_title">
-                  Elastyczny harmonogram i przystępne ceny
-                </h3>
-                <p
-                  class="item-text"
-                  data-translate-key="about_card_3_description"
-                >
-                  Wybierz dogodne godziny zajęć i ciesz się wysoką jakością
-                  nauki w przystępnej cenie.
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
+  <script src="/src/js/translations.js"></script>
+  <script src="/src/js/hero.js"></script>
+  <script src="/src/js/lessons.js"></script>
+  <script src="/src/js/reviews.js"></script>
+  <script src="/src/js/faq.js"></script>
+  <script src="/src/js/form.js"></script>
+  <script src="/src/js/ancor.js"></script>
+</body>
 
-      <section id="pricing" class="price-section" id="price">
-        <div class="container">
-          <div class="head-price">
-            <h2 class="price-heading" data-translate-key="price_heading">
-              Cenniki
-            </h2>
-            <p class="price-text" data-translate-key="price_text">
-              Każdy plan obejmuje dostęp do platformy online, czat z
-              nauczycielem i panel użytkownika.
-            </p>
-          </div>
-          <div class="card-box">
-            <div class="card">
-              <div class="edit-button">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M17 3C17.2626 2.73735 17.5744 2.52901 17.9176 2.38687C18.2608 2.24473 18.6286 2.17157 19 2.17157C19.3714 2.17157 19.7392 2.24473 20.0824 2.38687C20.4256 2.52901 20.7374 2.73735 21 3C21.2626 3.26264 21.471 3.57444 21.6131 3.9176C21.7553 4.26077 21.8284 4.62856 21.8284 5C21.8284 5.37143 21.7553 5.73923 21.6131 6.08239C21.471 6.42555 21.2626 6.73735 21 7L7.5 20.5L2 22L3.5 16.5L17 3Z"
-                    stroke="#ffffff"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-              <h1 class="title" data-translate-key="price_card_1_title">
-                "Standardowy"
-              </h1>
-              <div class="classes">
-                <span data-translate-key="price_card_1_classes">4 zajęć</span>
-                <span class="monthly" data-translate-key="price_card_1_monthly"
-                  >miesięcznie</span
-                >
-              </div>
-              <p
-                class="description"
-                data-translate-key="price_card_1_description"
-              >
-                Dla tych, którzy chcą systematycznie poprawiać swój poziom
-                angielskiego.
-              </p>
-              <div class="price" data-translate-key="price_card_1_price">
-                49 €
-              </div>
-            </div>
-            <div class="card mid">
-              <div class="edit-button">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M17 3C17.2626 2.73735 17.5744 2.52901 17.9176 2.38687C18.2608 2.24473 18.6286 2.17157 19 2.17157C19.3714 2.17157 19.7392 2.24473 20.0824 2.38687C20.4256 2.52901 20.7374 2.73735 21 3C21.2626 3.26264 21.471 3.57444 21.6131 3.9176C21.7553 4.26077 21.8284 4.62856 21.8284 5C21.8284 5.37143 21.7553 5.73923 21.6131 6.08239C21.471 6.42555 21.2626 6.73735 21 7L7.5 20.5L2 22L3.5 16.5L17 3Z"
-                    stroke="#ffffff"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-              <h1 class="title" data-translate-key="price_card_2_title">
-                "Próbny"
-              </h1>
-              <div class="access" data-translate-key="price_card_2_access">
-                3 dni darmowego dostępu
-              </div>
-              <div class="classes" data-translate-key="price_card_2_classes">
-                1 zajęcia + testowanie
-              </div>
-              <p
-                class="description"
-                data-translate-key="price_card_2_description"
-              >
-                Idealne dla tych, którzy chcą wypróbować format zajęć przed
-                wyborem planu.
-              </p>
-              <div class="price" data-translate-key="price_card_2_price">
-                Za darmo
-              </div>
-            </div>
-            <div class="card">
-              <div class="edit-button">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M17 3C17.2626 2.73735 17.5744 2.52901 17.9176 2.38687C18.2608 2.24473 18.6286 2.17157 19 2.17157C19.3714 2.17157 19.7392 2.24473 20.0824 2.38687C20.4256 2.52901 20.7374 2.73735 21 3C21.2626 3.26264 21.471 3.57444 21.6131 3.9176C21.7553 4.26077 21.8284 4.62856 21.8284 5C21.8284 5.37143 21.7553 5.73923 21.6131 6.08239C21.471 6.42555 21.2626 6.73735 21 7L7.5 20.5L2 22L3.5 16.5L17 3Z"
-                    stroke="#ffffff"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-              <h1 class="title" data-translate-key="price_card_3_title">
-                "Premium"
-              </h1>
-              <div class="classes">
-                <span data-translate-key="price_card_3_classes">8 zajęć</span>
-                <span class="monthly" data-translate-key="price_card_3_monthly"
-                  >miesięcznie</span
-                >
-              </div>
-              <div
-                class="additional"
-                data-translate-key="price_card_3_additional"
-              >
-                + indywidualne zadania
-              </div>
-              <p
-                class="description"
-                data-translate-key="price_card_3_description"
-              >
-                Dla osób, które dążą do szybkich postępów i głębszego
-                przyswajania materiału.
-              </p>
-              <div class="price" data-translate-key="price_card_3_price">
-                89 €
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="reviews" class="reviews-section">
-        <div class="container">
-          <div class="bordered-content">
-            <h2 data-translate-key="reviews_title">Opinie naszych uczniów</h2>
-            <div class="reviews-container">
-              <div class="review-card light-purple">
-                <div class="review-content">
-                  <span class="quote-icon"></span>
-                  <p class="review-text" data-translate-key="review_1_text">
-                    Zajęcia tutaj to czysta przyjemność! Nauczyciele są uważni,
-                    lekko zawsze interesujące. Już widzę postępy!
-                  </p>
-                </div>
-                <div class="review-author">
-                  <img
-                    src="/src/img/desk/reviews/magda.png"
-                    alt="Anna"
-                    class="author-img"
-                  />
-                  <span data-translate-key="review_1_author">Anna</span>
-                </div>
-              </div>
-              <div class="review-image">
-                <img
-                  src="/src/img/desk/reviews/student.png"
-                  alt="Student with books"
-                  data-translate-key="review_image_alt"
-                />
-              </div>
-              <div class="review-card black">
-                <div class="review-content">
-                  <span class="quote-icon"></span>
-                  <p class="review-text" data-translate-key="review_2_text">
-                    Elastyczne ceny polecamy i przystępne ceny. Polecam
-                    wszystkim, którzy chcą się учить английского в комфортовых
-                    условиях!
-                  </p>
-                </div>
-                <div class="review-author">
-                  <img
-                    src="/src/img/desk/reviews/Image-60.png"
-                    alt="Dmitrij"
-                    class="author-img"
-                  />
-                  <span data-translate-key="review_2_author">Dmitrij</span>
-                </div>
-              </div>
-              <div class="review-card light-purple">
-                <div class="review-content">
-                  <span class="quote-icon"></span>
-                  <p class="review-text" data-translate-key="review_3_text">
-                    Niesamowite doświadczenie! Nauczyciele dostosowują się do
-                    potrzeb uczniów, zajęcia zawsze są ciekawe.
-                  </p>
-                </div>
-                <div class="review-author">
-                  <img
-                    src="/src/img/desk/reviews/anna.png"
-                    alt="Magda"
-                    class="author-img"
-                  />
-                  <span data-translate-key="review_3_author">Magda</span>
-                </div>
-              </div>
-            </div>
-            <div class="navigation-arrows">
-              <button class="arrow left-arrow">←</button>
-              <button class="arrow right-arrow">→</button>
-            </div>
-            <div class="indicators">
-              <span class="indicator active"></span>
-              <span class="indicator"></span>
-              <span class="indicator"></span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="faq" class="faq-section" id="faq">
-        <div class="container">
-          <div class="faq-wrap">
-            <div class="faq-content">
-              <h2 class="faq-heading" data-translate-key="faq_title">FAQ</h2>
-              <div class="faq-list">
-                <div class="faq-item">
-                  <div class="faq-question">
-                    <span data-translate-key="faq_question_1"
-                      >Jak wygląda nauka?</span
-                    >
-                    <span class="faq-toggle">+</span>
-                  </div>
-                  <div class="faq-answer">
-                    <p data-translate-key="faq_answer_1">
-                      Nauka odbywa się w wygodnym formacie online lub
-                      stacjonarnie. Lekcje prowadzą doświadczeni lektorzy, a
-                      program jest dostosowany do Twojego poziomu i celu.
-                      Otrzymujesz dostęp do platformy edukacyjnej, czatu z
-                      nauczycielem i indywidualnych materiałów do nauki.
-                    </p>
-                  </div>
-                </div>
-                <div class="faq-item">
-                  <div class="faq-question">
-                    <span data-translate-key="faq_question_2"
-                      >Jak wybrać odpowiedniego nauczyciela?</span
-                    >
-                    <span class="faq-toggle">+</span>
-                  </div>
-                  <div class="faq-answer">
-                    <p data-translate-key="faq_answer_2">
-                      Dobieramy nauczyciela na podstawie Twojego poziomu, celu i
-                      preferencji. Możesz również skorystać z lekcji próbnej,
-                      aby sprawdzić, czy nauczyciel z wybranych opcji jest dla
-                      Ciebie komfortowa.
-                    </p>
-                  </div>
-                </div>
-                <div class="faq-item">
-                  <div class="faq-question">
-                    <span data-translate-key="faq_question_3"
-                      >Czy otrzymam certyfikat po ukończeniu kursu?</span
-                    >
-                    <span class="faq-toggle">+</span>
-                  </div>
-                  <div class="faq-answer">
-                    <p data-translate-key="faq_answer_3">
-                      Tak, po ukończeniu kursu otrzymasz certyfikat
-                      potwierdzający Twój poziom językowy i zdobyte
-                      umiejętności.
-                    </p>
-                  </div>
-                </div>
-                <div class="faq-item">
-                  <div class="faq-question">
-                    <span data-translate-key="faq_question_4"
-                      >Czy można zmienić harmonogram zajęć?</span
-                    >
-                    <span class="faq-toggle">+</span>
-                  </div>
-                  <div class="faq-answer">
-                    <p data-translate-key="faq_answer_4">
-                      Tak, istnieje możliwość zmiany harmonogramu zajęć.
-                      Wystarczy skontaktować się z lektorem lub administracją,
-                      aby ustalić nowe, dogodne terminy.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="faq-image">
-              <img
-                src="/src/img/desk/reviews/pretty-girl.png"
-                alt="Student smiling"
-                data-translate-key="faq_image_alt"
-                width="400"
-                height="565"
-                loading="lazy"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="contact" id="contact">
-        <div class="container">
-          <div class="wrap">
-            <div class="left-block">
-              <div class="left-wrap">
-                <h2 class="left-text" data-translate-key="contact_left_text">
-                  Zacznij naukę od darmowej lekcji!
-                </h2>
-              </div>
-              <div class="img-wrap">
-                <img
-                  class="contact-img"
-                  src="/src/img/desk/pretty-student-with-curly-hair-standing-smiling.png"
-                  alt="Student smiling"
-                  loading="lazy"
-                  data-translate-key="contact_image_alt"
-                />
-              </div>
-            </div>
-            <div class="right-block">
-              <h3 class="right-head" data-translate-key="contact_right_head">
-                Zrób krok bliżej do swojego celu!
-              </h3>
-              <p class="right-text" data-translate-key="contact_right_text">
-                Wypełnij formularz, a nasz specjalista zapisze Cię na 3 darmowe
-                lekcje!
-              </p>
-              <form class="modal__form" action="send-mail.php" method="POST">
-                <div class="modal__label">
-                  <label
-                    for="name"
-                    class="sr-only"
-                    data-translate-key="form_name_label"
-                    >Imię</label
-                  >
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Imię"
-                    required
-                    data-translate-key="form_name_placeholder"
-                  />
-                </div>
-                <div class="modal__label">
-                  <label
-                    for="phone"
-                    class="sr-only"
-                    data-translate-key="form_phone_label"
-                    >Telefon</label
-                  >
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    placeholder="Telefon"
-                    required
-                    data-translate-key="form_phone_placeholder"
-                  />
-                </div>
-                <div class="modal__label">
-                  <label
-                    for="email"
-                    class="sr-only"
-                    data-translate-key="form_email_label"
-                    >E-mail</label
-                  >
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="E-mail"
-                    required
-                    data-translate-key="form_email_placeholder"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  class="modal__button"
-                  data-translate-key="form_submit_button"
-                >
-                  Wyślij
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <script src="components/header/header.js"></script>
-
-    <script src="/src/js/translations.js"></script>
-    <script src="/src/js/hero.js"></script>
-    <script src="/src/js/lessons.js"></script>
-    <script src="/src/js/reviews.js"></script>
-    <script src="/src/js/faq.js"></script>
-    <script src="/src/js/form.js"></script>
-    <script src="/src/js/ancor.js"></script>
-  </body>
 </html>
