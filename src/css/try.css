@@ -1,3 +1,23 @@
+.line-cont {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 50px;
+  padding-top: 220px;
+}
+.position {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 127%;
+  color: #000;
+}
+.line {
+  display: inline-block;
+  width: 35px;
+  height: 1px;
+  background: #000;
+}
 .about-wrap {
   border-radius: 35px; /* Reduced from 50px by 30% */
   height: auto;
