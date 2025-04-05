@@ -2,56 +2,56 @@
   background-image: url("/src/img/desk/books.png");
   background-repeat: no-repeat;
   background-position: right;
-  padding-top: 108px; /* Reduced from 155px by 30% */
-  padding-bottom: 63px; /* Reduced from 90px by 30% */
+  padding-top: 97px;
+  padding-bottom: 57px;
 }
+
 .price-heading {
   font-family: var(--second-family);
   font-weight: 700;
-  font-size: calc(var(--font-size-51) * 0.7); /* Reduced by 30% */
+  font-size: calc(var(--font-size-51) * 0.63);
   color: #000;
-  padding-bottom: 21px; /* Reduced from 30px by 30% */
+  padding-bottom: 19px;
 }
+
 .price-text {
   font-family: var(--font-family);
   font-weight: 400;
-  font-size: calc(var(--font-size-30) * 0.7); /* Reduced by 30% */
+  font-size: calc(var(--font-size-30) * 0.63);
   line-height: 147%;
   color: #000;
-  padding-bottom: 35px; /* Reduced from 50px by 30% */
+  padding-bottom: 32px;
 }
 
 .card-box {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(210px, 1fr)
-  ); /* Reduced from 300px by 30% */
-  gap: 14px; /* Reduced from 20px by 30% */
+  grid-template-columns: repeat(auto-fit, minmax(189px, 1fr));
+  gap: 13px;
 }
 
 .card {
-  max-width: 327px; /* Reduced from 467px by 30% */
-  padding: 28px; /* Reduced from 40px by 30% */
+  max-width: 294px;
+  padding: 25px;
   box-shadow: 1px 3px 6px 0 rgba(0, 0, 0, 0.25);
   background: #e8e6ff;
-  border-radius: 21px; /* Reduced from 30px by 30% */
+  border-radius: 19px;
   position: relative;
-
   display: flex;
   flex-direction: column;
   height: 100%;
 }
+
 .card.mid {
   box-shadow: 1px 3px 6px 0 rgba(0, 0, 0, 0.25);
   background: #ffd400;
 }
+
 .edit-button {
   position: absolute;
-  top: 17px; /* Reduced from 24px by 30% */
-  right: 17px; /* Reduced from 24px by 30% */
-  width: 34px; /* Reduced from 48px by 30% */
-  height: 34px; /* Reduced from 48px by 30% */
+  top: 15px;
+  right: 15px;
+  width: 31px;
+  height: 31px;
   background-color: #231f20;
   border-radius: 50%;
   display: flex;
@@ -61,22 +61,22 @@
 
 .title {
   font-family: var(--font-family);
-  font-size: calc(var(--font-size-30) * 0.7); /* Reduced by 30% */
+  font-size: calc(var(--font-size-30) * 0.63);
   font-weight: 700;
   line-height: 1.3;
   color: #000000;
-  margin-bottom: 11px; /* Reduced from 16px by 30% */
+  margin-bottom: 10px;
 }
 
 .classes {
-  font-size: calc(var(--font-size-20) * 0.7); /* Reduced by 30% */
+  font-size: calc(var(--font-size-20) * 0.63);
   font-weight: 700;
   color: #000000;
-  margin-bottom: 6px; /* Reduced from 8px by 30% (rounded) */
+  margin-bottom: 5px;
 }
 
 .monthly {
-  font-size: calc(var(--font-size-20) * 0.7); /* Reduced by 30% */
+  font-size: calc(var(--font-size-20) * 0.63);
   font-weight: 400;
   color: #000000;
   opacity: 0.7;
@@ -84,61 +84,60 @@
 
 .description {
   font-family: var(--font-family);
-  font-size: calc(var(--font-size-20) * 0.7); /* Reduced by 30% */
+  font-size: calc(var(--font-size-20) * 0.63);
   line-height: 1.5;
   color: #000000;
-  margin: 17px 0 56px 0; /* Reduced from 24px 0 80px 0 by 30% */
+  margin: 15px 0 50px 0;
 }
 
 .price {
-  font-size: calc(var(--font-size-51) * 0.7); /* Reduced by 30% */
+  font-size: calc(var(--font-size-51) * 0.63);
   font-weight: 700;
   line-height: 1.2;
   color: #000000;
-
   margin-top: auto;
 }
+
 .additional {
-  font-size: calc(var(--font-size-20) * 0.7); /* Reduced by 30% */
+  font-size: calc(var(--font-size-20) * 0.63);
   font-weight: 500;
   color: #000000;
-  margin-bottom: 11px; /* Reduced from 16px by 30% */
+  margin-bottom: 10px;
 }
+
 .access {
   font-family: var(--font-family);
   font-weight: 700;
-  font-size: calc(var(--font-size-25) * 0.7); /* Reduced by 30% */
+  font-size: calc(var(--font-size-25) * 0.63);
   line-height: 140%;
   color: #000;
 }
+
 .price-heading {
-  font-size: calc(var(--font-size-42) * 0.7); /* Reduced by 30% */
+  font-size: calc(var(--font-size-42) * 0.63);
 }
 
 .price-text {
-  font-size: calc(var(--font-size-25) * 0.7); /* Reduced by 30% */
+  font-size: calc(var(--font-size-25) * 0.63);
 }
 
 @media (max-width: 992px) {
   .price-section {
     background-position: 95% 10%;
     background-size: 30%;
-    padding: 28px 0; /* Reduced from 40px by 30% */
+    padding: 25px 0;
   }
 
   .card-box {
-    grid-template-columns: repeat(
-      auto-fit,
-      minmax(196px, 1fr)
-    ); /* Reduced from 280px by 30% */
+    grid-template-columns: repeat(auto-fit, minmax(176px, 1fr));
   }
 
   .card {
-    padding: 21px; /* Reduced from 30px by 30% */
+    padding: 19px;
   }
 
   .price {
-    font-size: calc(var(--font-size-42) * 0.7); /* Reduced by 30% */
+    font-size: calc(var(--font-size-42) * 0.63);
   }
 }
 
@@ -148,18 +147,18 @@
   }
 
   .price-heading {
-    font-size: calc(var(--font-size-37) * 0.7); /* Reduced by 30% */
-    padding-bottom: 14px; /* Reduced from 20px by 30% */
+    font-size: calc(var(--font-size-37) * 0.63);
+    padding-bottom: 13px;
   }
 
   .price-text {
-    font-size: calc(var(--font-size-20) * 0.7); /* Reduced by 30% */
-    padding-bottom: 21px; /* Reduced from 30px by 30% */
+    font-size: calc(var(--font-size-20) * 0.63);
+    padding-bottom: 19px;
   }
 
   .card-box {
     grid-template-columns: 1fr;
-    max-width: 350px; /* Reduced from 500px by 30% */
+    max-width: 315px;
     margin: 0 auto;
   }
 
@@ -168,22 +167,22 @@
   }
 
   .title {
-    font-size: calc(var(--font-size-26) * 0.7); /* Reduced by 30% */
+    font-size: calc(var(--font-size-26) * 0.63);
   }
 
   .description {
-    font-size: calc(var(--font-size-18) * 0.7); /* Reduced by 30% */
-    margin: 14px 0 42px 0; /* Reduced from 20px 0 60px 0 by 30% */
+    font-size: calc(var(--font-size-18) * 0.63);
+    margin: 13px 0 38px 0;
   }
 
   .edit-button {
-    width: 28px; /* Reduced from 40px by 30% */
-    height: 28px; /* Reduced from 40px by 30% */
+    width: 25px;
+    height: 25px;
   }
 
   .edit-button svg {
-    width: 14px; /* Reduced from 20px by 30% */
-    height: 14px; /* Reduced from 20px by 30% */
+    width: 13px;
+    height: 13px;
   }
 }
 
@@ -193,53 +192,54 @@
     background-repeat: no-repeat;
     background-position: top right;
     background-size: contain;
-    padding-top: 70px; /* Reduced from 100px by 30% */
+    padding-top: 63px;
   }
+
   .price-heading {
-    font-size: calc(var(--font-size-28) * 0.7); /* Reduced by 30% */
+    font-size: calc(var(--font-size-28) * 0.63);
   }
 
   .price-text {
-    font-size: calc(var(--font-size-16) * 0.7); /* Reduced by 30% */
+    font-size: calc(var(--font-size-16) * 0.63);
   }
 
   .card {
-    padding: 17px; /* Reduced from 25px by 30% (rounded down) */
-    border-radius: 14px; /* Reduced from 20px by 30% */
+    padding: 15px;
+    border-radius: 13px;
   }
 
   .title {
-    font-size: calc(var(--font-size-22) * 0.7); /* Reduced by 30% */
+    font-size: calc(var(--font-size-22) * 0.63);
   }
 
   .classes,
   .monthly,
   .additional {
-    font-size: calc(var(--font-size-16) * 0.7); /* Reduced by 30% */
+    font-size: calc(var(--font-size-16) * 0.63);
   }
 
   .description {
-    font-size: calc(var(--font-size-16) * 0.7); /* Reduced by 30% */
-    margin: 11px 0 28px 0; /* Reduced from 16px 0 40px 0 by 30% */
+    font-size: calc(var(--font-size-16) * 0.63);
+    margin: 10px 0 25px 0;
   }
 
   .price {
-    font-size: calc(var(--font-size-40) * 0.7); /* Reduced by 30% */
+    font-size: calc(var(--font-size-40) * 0.63);
   }
 
   .access {
-    font-size: calc(var(--font-size-16) * 0.7); /* Reduced by 30% */
+    font-size: calc(var(--font-size-16) * 0.63);
   }
 
   .edit-button {
-    top: 10px; /* Reduced from 15px by 30% (rounded down) */
-    right: 10px; /* Reduced from 15px by 30% (rounded down) */
-    width: 35px; /* Reduced from 50px by 30% */
-    height: 35px; /* Reduced from 50px by 30% */
+    top: 9px;
+    right: 9px;
+    width: 32px;
+    height: 32px;
   }
 
   .edit-button svg {
-    width: 13px; /* Reduced from 19px by 30% (rounded down) */
-    height: 13px; /* Reduced from 19px by 30% (rounded down) */
+    width: 12px;
+    height: 12px;
   }
 }
