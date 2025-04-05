@@ -34,12 +34,15 @@
 .left-block {
   padding: 57.4px 0 0 63px;
   width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .left-text {
   font-family: var(--font-family);
   font-weight: 700;
-  font-size: 20px;
+  font-size: 30px;
   line-height: 127%;
   color: var(--text-color);
 
