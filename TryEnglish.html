@@ -11,6 +11,10 @@
   <link rel="stylesheet" href="./src/css/benefit.css" />
   <link rel="stylesheet" href="./src/css/try.css" />
   <link rel="stylesheet" href="./src/css/how.css" />
+  <link rel="stylesheet" href="./src/css/main/reviews.css" />
+  <link rel="stylesheet" href="/src/css/contact.css" />
+
+
 </head>
 
 <body>
@@ -139,9 +143,138 @@
   </section>
   
 
+
+
+  
+
+
+
+
+
+
+
+  <section id="reviews" class="reviews-section">
+    <div class="container">
+      <div class="bordered-content">
+        <h2 data-translate-key="reviews_title">Opinie naszych uczniów</h2>
+        <div class="reviews-container">
+          <div class="review-card light-purple">
+            <div class="review-content">
+              <span class="quote-icon"></span>
+              <p class="review-text" data-translate-key="review_1_text">
+                Zajęcia tutaj to czysta przyjemność! Nauczyciele są uważni,
+                lekko zawsze interesujące. Już widzę postępy!
+              </p>
+            </div>
+            <div class="review-author">
+              <img src="/src/img/desk/reviews/magda.png" alt="Anna" class="author-img" />
+              <span data-translate-key="review_1_author">Anna</span>
+            </div>
+          </div>
+          <div class="review-image">
+            <img src="/src/img/desk/reviews/student.png" alt="Student with books"
+              data-translate-key="review_image_alt" />
+          </div>
+          <div class="review-card black">
+            <div class="review-content">
+              <span class="quote-icon"></span>
+              <p class="review-text" data-translate-key="review_2_text">
+                Elastyczne ceny polecamy i przystępne ceny. Polecam
+                wszystkim, którzy chcą się учить английского в комфортовых
+                условиях!
+              </p>
+            </div>
+            <div class="review-author">
+              <img src="/src/img/desk/reviews/Image-60.png" alt="Dmitrij" class="author-img" />
+              <span data-translate-key="review_2_author">Dmitrij</span>
+            </div>
+          </div>
+          <div class="review-card light-purple">
+            <div class="review-content">
+              <span class="quote-icon"></span>
+              <p class="review-text" data-translate-key="review_3_text">
+                Niesamowite doświadczenie! Nauczyciele dostosowują się do
+                potrzeb uczniów, zajęcia zawsze są ciekawe.
+              </p>
+            </div>
+            <div class="review-author">
+              <img src="/src/img/desk/reviews/anna.png" alt="Magda" class="author-img" />
+              <span data-translate-key="review_3_author">Magda</span>
+            </div>
+          </div>
+        </div>
+        <div class="navigation-arrows">
+          <button class="arrow left-arrow">←</button>
+          <button class="arrow right-arrow">→</button>
+        </div>
+        <div class="indicators">
+          <span class="indicator active"></span>
+          <span class="indicator"></span>
+          <span class="indicator"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  <section id="contact" class="contact" id="contact">
+    <div class="container">
+      <div class="wrap">
+        <div class="left-block">
+          <div class="left-wrap">
+            <h2 class="left-text" data-translate-key="contact_left_text">
+              Zacznij naukę od darmowej lekcji!
+            </h2>
+          </div>
+          <div class="img-wrap">
+            <img class="contact-img" src="/src/img/desk/pretty-student-with-curly-hair-standing-smiling.png"
+              alt="Student smiling" loading="lazy" data-translate-key="contact_image_alt" />
+          </div>
+        </div>
+        <div class="right-block">
+          <h3 class="right-head" data-translate-key="contact_right_head">
+            Zrób krok bliżej do swojego celu!
+          </h3>
+          <p class="right-text" data-translate-key="contact_right_text">
+            Wypełnij formularz, a nasz specjalista zapisze Cię na 3 darmowe
+            lekcje!
+          </p>
+          <form class="modal__form" action="send-mail.php" method="POST">
+            <div class="modal__label">
+              <label for="name" class="sr-only" data-translate-key="form_name_label">Imię</label>
+              <input type="text" id="name" name="name" placeholder="Imię" required
+                data-translate-key="form_name_placeholder" />
+            </div>
+            <div class="modal__label">
+              <label for="phone" class="sr-only" data-translate-key="form_phone_label">Telefon</label>
+              <input type="tel" id="phone" name="phone" placeholder="Telefon" required
+                data-translate-key="form_phone_placeholder" />
+            </div>
+            <div class="modal__label">
+              <label for="email" class="sr-only" data-translate-key="form_email_label">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="E-mail" required
+                data-translate-key="form_email_placeholder" />
+            </div>
+            <button type="submit" class="modal__button" data-translate-key="form_submit_button">
+              Wyślij
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <script src="components/header/header.js"></script>
   <script src="/src/js/hero.js"></script>
   <script src="/src/js/translations.js"></script>
+  <script src="/src/js/reviews.js"></script>
+  <script src="/src/js/form.js"></script>
 </body>
 
 </html>
