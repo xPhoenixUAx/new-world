@@ -2,7 +2,7 @@
   background-image: url("../img/desk/erasebg-transformed\ 1.png");
   background-repeat: no-repeat;
   background-position: right;
-  padding-top: 250px;
+  padding-top: 160px;
 }
 .benefits-head {
   font-family: var(--second-family);
@@ -83,6 +83,7 @@
   .benefits {
     background-image: url("../img/mobile/why-bg.png");
     background-position: bottom right;
+    padding-top: 80px;
   }
   .benefits-head {
     padding-bottom: 55px;
@@ -122,7 +123,7 @@
     width: 4px;
     height: calc(100% - 120px);
     top: 35px;
-    left: 55px;
+    left: 35px;
     right: auto;
     transform: none;
   }
