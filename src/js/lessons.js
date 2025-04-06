@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const formButtons = document.querySelectorAll('.modal__button[data-form]');
     const form = document.querySelector('.modal__form');
 
-
     items.forEach(item => {
         item.addEventListener('click', () => {
             const modalId = item.getAttribute('data-modal');
@@ -16,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
-
 
     closeButtons.forEach(button => {
         button.addEventListener('click', () => {
@@ -46,34 +44,47 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const formData = new FormData(form);
-
-        fetch('send-mail.php', {
-            method: 'POST',
-            body: formData
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.success) {
-                closeAllModals();
-                const successModal = document.getElementById('success-modal');
-                successModal.classList.add('active');
-                setTimeout(() => {
-                    successModal.classList.remove('active');
-                }, 2000); 
-            } else {
-                alert('Wystąpił błąd podczas wysyłania formularza. Spróbuj ponownie.');
+    if (form) {
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const submitButton = form.querySelector('.modal__button');
+            
+            if (submitButton) {
+                submitButton.disabled = true;
             }
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            alert('Wystąpił błąd podczas wysyłania formularza. Spróbuj ponownie.');
-        });
-    });
 
+            fetch('send-mail.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    closeAllModals();
+                    const successModal = document.getElementById('success-modal');
+                    if (successModal) {
+                        successModal.classList.add('active');
+                        setTimeout(() => {
+                            successModal.classList.remove('active');
+                        }, 2000);
+                    }
+                    form.reset();
+                } else {
+                    alert(data.message || 'Wystąpił błąd podczas wysyłania formularza. Spróbuj ponownie.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Wystąpił błąd podczas wysyłania formularza. Spróbuj ponownie.');
+            })
+            .finally(() => {
+                if (submitButton) {
+                    submitButton.disabled = false;
+                }
+            });
+        });
+    }
 
     function closeAllModals() {
         modals.forEach(modal => {
