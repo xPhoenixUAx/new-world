@@ -12,15 +12,26 @@
     <link rel="stylesheet" href="./src/css/how.css" />
     <link rel="stylesheet" href="./src/css/main/reviews.css" />
     <link rel="stylesheet" href="/src/css/contact.css" />
+    <link rel="stylesheet" href="./src/css/main/lessons.css" />
   </head>
 
   <body>
     <section class="about">
       <div class="container">
         <div class="line-cont">
-          <a href="./index.html" class="position" data-translate-key="about_breadcrumb_main">Główna</a>
+          <a
+            href="./index.html"
+            class="position"
+            data-translate-key="about_breadcrumb_main"
+            >Główna</a
+          >
           <span class="line"></span>
-          <a class="position" href="./TryEnglish.html" data-translate-key="about_breadcrumb_try">Wypróbuj za darmo</a>
+          <a
+            class="position"
+            href="./TryEnglish.html"
+            data-translate-key="about_breadcrumb_try"
+            >Wypróbuj za darmo</a
+          >
         </div>
         <div class="about-wrap">
           <div class="head-block">
@@ -43,11 +54,68 @@
             </div>
             <div class="head-text-cont">
               <h2 class="about-heading" data-translate-key="about_heading">
-                Wypróbuj 3 darmowe lekcje angielskiego i przekonaj się, jakie to proste!
+                Wypróbuj 3 darmowe lekcje angielskiego i przekonaj się, jakie to
+                proste!
               </h2>
-              <a href="#" class="about-btn" data-translate-key="about_button">
-                Wypróbuj za darmo
-              </a>
+              <button
+                class="modal__button"
+                data-form="form-modal"
+                data-translate-key="modal_button_sign_up"
+              >
+                Zapisz się
+              </button>
+              <div class="modal" id="form-modal">
+                <div class="modal__content modal__content--yellow">
+                  <span class="modal__close">×</span>
+                  <h3 class="modal__title" data-translate-key="form_title">
+                    Форма записи
+                  </h3>
+                  <form
+                    class="modal__form"
+                    action="send-mail.php"
+                    method="POST"
+                  >
+                    <label class="modal__label">
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="Imię"
+                        required
+                        data-translate-key="form_name_placeholder"
+                      />
+                    </label>
+                    <label class="modal__label">
+                      <input
+                        type="tel"
+                        name="phone"
+                        placeholder="Telefon"
+                        required
+                        data-translate-key="form_phone_placeholder"
+                      />
+                    </label>
+                    <label class="modal__label">
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="E-mail"
+                        required
+                        data-translate-key="form_email_placeholder"
+                      />
+                    </label>
+                    <p class="modal__form-note" data-translate-key="form_note">
+                      Wypełniając formularz i przesyłając swoje dane, wyrażasz
+                      zgodę na ich przetwarzanie zgodnie z Polityką Prywatności.
+                    </p>
+                    <button
+                      type="submit"
+                      class="modal__button"
+                      data-translate-key="form_submit_button"
+                    >
+                      Wyślij
+                    </button>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
           <h3 class="second-head" data-translate-key="about_subheading">
@@ -59,7 +127,8 @@
                 Ocena Twojego poziomu i spersonalizowany program nauki.
               </h3>
               <p class="item-text" data-translate-key="about_item_1_text">
-                Dzięki testowi określimy Twój poziom angielskiego i opracujemy plan nauki.
+                Dzięki testowi określimy Twój poziom angielskiego i opracujemy
+                plan nauki.
               </p>
             </li>
             <li class="about-item about-item-2">
@@ -67,15 +136,18 @@
                 Interaktywne zajęcia skoncentrowane na praktyce mówienia.
               </h3>
               <p class="item-text" data-translate-key="about_item_2_text">
-                Lekcje są zaprojektowane tak, abyś mówił jak najwięcej i pokonał barierę językową.
+                Lekcje są zaprojektowane tak, abyś mówił jak najwięcej i pokonał
+                barierę językową.
               </p>
             </li>
             <li class="about-item about-item-3">
               <h3 class="item-head" data-translate-key="about_item_3_title">
-                Wskazówki i rekomendacje dotyczące poprawy umiejętności językowych.
+                Wskazówki i rekomendacje dotyczące poprawy umiejętności
+                językowych.
               </h3>
               <p class="item-text" data-translate-key="about_item_3_text">
-                Nauczyciel udzieli przydatnych wskazówek dotyczących nauki języka i podpowie, jak efektywniej uczyć się angielskiego.
+                Nauczyciel udzieli przydatnych wskazówek dotyczących nauki
+                języka i podpowie, jak efektywniej uczyć się angielskiego.
               </p>
             </li>
           </ul>
@@ -90,21 +162,37 @@
             <div class="hero__timer-countdown">
               <div class="hero__timer-block">
                 <span class="hero__timer-value" id="days">150</span>
-                <span class="hero__timer-label" data-translate-key="hero_timer_days">Dni</span>
+                <span
+                  class="hero__timer-label"
+                  data-translate-key="hero_timer_days"
+                  >Dni</span
+                >
               </div>
               <div class="hero__timer-block">
                 <span class="hero__timer-value" id="hours">10</span>
-                <span class="hero__timer-label" data-translate-key="hero_timer_hours">Godzina</span>
+                <span
+                  class="hero__timer-label"
+                  data-translate-key="hero_timer_hours"
+                  >Godzina</span
+                >
               </div>
               <span class="hero__timer-separator">:</span>
               <div class="hero__timer-block">
                 <span class="hero__timer-value" id="minutes">01</span>
-                <span class="hero__timer-label" data-translate-key="hero_timer_minutes">Chwila</span>
+                <span
+                  class="hero__timer-label"
+                  data-translate-key="hero_timer_minutes"
+                  >Chwila</span
+                >
               </div>
               <span class="hero__timer-separator">:</span>
               <div class="hero__timer-block">
                 <span class="hero__timer-value" id="seconds">00</span>
-                <span class="hero__timer-label" data-translate-key="hero_timer_seconds">Chwila</span>
+                <span
+                  class="hero__timer-label"
+                  data-translate-key="hero_timer_seconds"
+                  >Chwila</span
+                >
               </div>
             </div>
             <p class="hero__timer-start" data-translate-key="hero_timer_start">
@@ -118,7 +206,9 @@
 
     <section class="benefits">
       <div class="container">
-        <h1 class="benefits-head" data-translate-key="benefits_heading">Dlaczego warto spróbować?</h1>
+        <h1 class="benefits-head" data-translate-key="benefits_heading">
+          Dlaczego warto spróbować?
+        </h1>
 
         <div class="benefits-container">
           <div class="continuous-line"></div>
@@ -130,8 +220,13 @@
               </div>
             </div>
             <div class="benefit-text">
-              <p class="benefit-title" data-translate-key="benefit_1_title">Indywidualne podejście –</p>
-              <p class="benefit-description" data-translate-key="benefit_1_description">
+              <p class="benefit-title" data-translate-key="benefit_1_title">
+                Indywidualne podejście –
+              </p>
+              <p
+                class="benefit-description"
+                data-translate-key="benefit_1_description"
+              >
                 nauczyciel dostosuje się do Twojego poziomu i celów.
               </p>
             </div>
@@ -144,8 +239,15 @@
               </div>
             </div>
             <div class="benefit-text">
-              <p class="benefit-title" data-translate-key="benefit_2_title">Elastyczny harmonogram –</p>
-              <p class="benefit-description" data-translate-key="benefit_2_description">wybierz dogodny czas zajęć.</p>
+              <p class="benefit-title" data-translate-key="benefit_2_title">
+                Elastyczny harmonogram –
+              </p>
+              <p
+                class="benefit-description"
+                data-translate-key="benefit_2_description"
+              >
+                wybierz dogodny czas zajęć.
+              </p>
             </div>
           </div>
 
@@ -156,8 +258,13 @@
               </div>
             </div>
             <div class="benefit-text">
-              <p class="benefit-title" data-translate-key="benefit_3_title">Brak zobowiązań –</p>
-              <p class="benefit-description" data-translate-key="benefit_3_description">
+              <p class="benefit-title" data-translate-key="benefit_3_title">
+                Brak zobowiązań –
+              </p>
+              <p
+                class="benefit-description"
+                data-translate-key="benefit_3_description"
+              >
                 spróbuj i zdecyduj, czy nasz format Ci odpowiada.
               </p>
             </div>
@@ -337,5 +444,6 @@
     <script src="/src/js/translations.js"></script>
     <script src="/src/js/reviews.js"></script>
     <script src="/src/js/form.js"></script>
+    <script src="/src/js/lessons.js"></script>
   </body>
 </html>
