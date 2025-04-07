@@ -78,15 +78,15 @@
 }
 
 .about-item-1 {
-  background-image: url("/src/img/desk/why/1.svg");
+  background-image: url("./src/img/desk/why/1.svg");
 }
 
 .about-item-2 {
-  background-image: url("/src/img/desk/why/2.svg");
+  background-image: url("./src/img/desk/why/2.svg");
 }
 
 .about-item-3 {
-  background-image: url("/src/img/desk/why/3.svg");
+  background-image: url("./src/img/desk/why/3.svg");
 }
 
 .item-head {
