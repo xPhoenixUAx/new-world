@@ -78,15 +78,15 @@
 }
 
 .about-item-1 {
-  background-image: url("/src/img/desk/why/1.svg");
+  background-image: url("../../img/desk/why/1.svg");
 }
 
 .about-item-2 {
-  background-image: url("/src/img/desk/why/2.svg");
+  background-image: url("../../img/desk/why/2.svg");
 }
 
 .about-item-3 {
-  background-image: url("/src/img/desk/why/3.svg");
+  background-image: url("../../img/desk/why/3.svg");
 }
 
 .item-head {
@@ -106,12 +106,12 @@
   color: #000;
 }
 
-/* .icon {
+.icon {
   width: 35px;
   height: 35px;
   background: url("/src/img/desk/why/1.svg") no-repeat right cover;
   margin: 14px auto 0;
-} */
+}
 
 @media (min-width: 1020px) and (max-width: 1199px) {
   .about-item:nth-child(1),
