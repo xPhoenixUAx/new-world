@@ -213,17 +213,17 @@
   }
 
   .title {
-      font-size: 20px; /* Оставляем 20px */
+      font-size: 20px; 
   }
 
   .classes,
   .monthly,
   .additional {
-      font-size: 18px; /* Оставляем 18px */
+      font-size: 18px; 
   }
 
   .description {
-      font-size: 16px; /* Оставляем 16px */
+      font-size: 16px; 
       margin: 10px 0 25px 0;
   }
 

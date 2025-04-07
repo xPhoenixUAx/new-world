@@ -421,7 +421,7 @@
   }
 
   .modal__content {
-      padding: 40px 15px 15px; /* Збільшено верхній відступ */
+      padding: 40px 15px 15px; 
       max-width: 90%;
       max-height: 85vh;
   }
