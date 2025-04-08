@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $to = "info@yourlanguageplatform.com"; 
     $subject = "Nowe zgłoszenie z formularza";
     $message = "Imię: $name\nTelefon: $phone\nE-mail: $email";
-    $headers = "From: ceo@newworldprojectag.com\r\n";
+    $headers = "From: info@newworldprojectag.com\r\n";
     $headers .= "Reply-To: $email\r\n";
     $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
 
