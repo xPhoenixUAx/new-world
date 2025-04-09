@@ -50,11 +50,11 @@
 }
 
 .lessons__item--yellow {
-  background-color: #FFF4BF;
+  background-color: #fff4bf;
 }
 
 .lessons__item--purple {
-  background-color: #E8E6FF;
+  background-color: #e8e6ff;
 }
 
 .lessons__header {
@@ -67,11 +67,11 @@
 }
 
 .lessons__item--yellow .lessons__header {
-  background-color: #FFF4BF;
+  background-color: #fff4bf;
 }
 
 .lessons__item--purple .lessons__header {
-  background-color: #E8E6FF;
+  background-color: #e8e6ff;
 }
 
 .lessons__header-title {
@@ -87,7 +87,8 @@
 .lessons__arrow {
   width: 30px;
   height: 30px;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>') no-repeat center;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>')
+    no-repeat center;
   background-size: 20px;
   border-radius: 50%;
   background-color: #000;
@@ -143,7 +144,7 @@
 }
 
 .modal__content {
-  padding: 60px 40px 20px; /* Збільшено верхній відступ до 60px, щоб уникнути накладання */
+  padding: 60px 40px 20px;
   border-radius: 20px;
   max-width: 800px;
   width: 90%;
@@ -163,16 +164,16 @@
 }
 
 .modal__content--yellow {
-  background-color: #FFF4BF;
+  background-color: #fff4bf;
 }
 
 .modal__content--purple {
-  background-color: #E8E6FF;
+  background-color: #e8e6ff;
 }
 
 .modal__close {
   position: absolute;
-  top: 20px; /* Збільшено відступ зверху */
+  top: 20px;
   right: 20px;
   font-size: 24px;
   font-weight: 700;
@@ -322,225 +323,225 @@
 
 @media (max-width: 1024px) {
   .lessons {
-      padding: 40px 0;
-      background-size: 40%;
+    padding: 40px 0;
+    background-size: 40%;
   }
 
   .lessons__title {
-      font-size: clamp(24px, 4vw, 36px);
-      width: 60%;
+    font-size: clamp(24px, 4vw, 36px);
+    width: 60%;
   }
 
   .lessons__subtitle {
-      font-size: clamp(16px, 2vw, 18px);
-      width: 60%;
+    font-size: clamp(16px, 2vw, 18px);
+    width: 60%;
   }
 
   .lessons__row--two .lessons__item,
   .lessons__row--two .lessons__image-wrapper,
   .lessons__row--three .lessons__item,
   .lessons__row--three .lessons__image-wrapper {
-      width: 48%;
-      max-width: none;
+    width: 48%;
+    max-width: none;
   }
 
   .lessons__row--three {
-      flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   .lessons__row--three .lessons__item,
   .lessons__row--three .lessons__image-wrapper {
-      width: 48%;
+    width: 48%;
   }
 
   .lessons__header {
-      padding: 15px;
+    padding: 15px;
   }
 
   .lessons__header-title {
-      font-size: clamp(18px, 2.5vw, 20px);
+    font-size: clamp(18px, 2.5vw, 20px);
   }
 
   .modal__content {
-      padding: 50px 20px 20px; /* Збільшено верхній відступ */
-      max-width: 90%;
-      max-height: 90vh;
+    padding: 50px 20px 20px;
+    max-width: 90%;
+    max-height: 90vh;
   }
 
   .modal__close {
-      top: 15px;
-      right: 15px;
+    top: 15px;
+    right: 15px;
   }
 
   .modal__inner {
-      flex-direction: column;
-      gap: 20px;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .modal__image-wrapper {
-      width: 100%;
-      height: 200px;
+    width: 100%;
+    height: 200px;
   }
 }
 
 @media (max-width: 768px) {
   .lessons {
-      padding: 30px 0;
-      background-size: 30%;
+    padding: 30px 0;
+    background-size: 30%;
   }
 
   .lessons__title {
-      font-size: clamp(20px, 4vw, 28px);
-      width: 100%;
+    font-size: clamp(20px, 4vw, 28px);
+    width: 100%;
   }
 
   .lessons__subtitle {
-      font-size: clamp(14px, 2vw, 16px);
-      width: 100%;
+    font-size: clamp(14px, 2vw, 16px);
+    width: 100%;
   }
 
   .lessons__row {
-      flex-direction: column;
-      gap: 15px;
+    flex-direction: column;
+    gap: 15px;
   }
 
   .lessons__row--two .lessons__item,
   .lessons__row--two .lessons__image-wrapper,
   .lessons__row--three .lessons__item,
   .lessons__row--three .lessons__image-wrapper {
-      width: 100%;
-      max-width: none;
+    width: 100%;
+    max-width: none;
   }
 
   .lessons__header {
-      padding: 10px;
+    padding: 10px;
   }
 
   .lessons__header-title {
-      font-size: clamp(16px, 2.5vw, 18px);
+    font-size: clamp(16px, 2.5vw, 18px);
   }
 
   .modal__content {
-      padding: 40px 15px 15px; 
-      max-width: 90%;
-      max-height: 85vh;
+    padding: 40px 15px 15px;
+    max-width: 90%;
+    max-height: 85vh;
   }
 
   .modal__title {
-      font-size: 20px;
+    font-size: 20px;
   }
 
   .modal__description {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .modal__list li {
-      font-size: 12px;
+    font-size: 12px;
   }
 
   .modal__button {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .modal__label input {
-      font-size: 12px;
+    font-size: 12px;
   }
 
   .modal__label input::placeholder {
-      font-size: 12px;
+    font-size: 12px;
   }
 
   .modal__form-note {
-      font-size: 10px;
+    font-size: 10px;
   }
 
   .modal__close {
-      top: 10px;
-      right: 10px;
-      font-size: 20px;
-      padding: 3px 8px;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    padding: 3px 8px;
   }
 
   .modal__inner {
-      gap: 15px;
+    gap: 15px;
   }
 
   .modal__image-wrapper {
-      height: 150px;
+    height: 150px;
   }
 }
 
 @media (max-width: 480px) {
   .lessons {
-      padding: 20px 0;
-      background-size: 20%;
+    padding: 20px 0;
+    background-size: 20%;
   }
 
   .lessons__title {
-      font-size: clamp(18px, 4vw, 24px);
+    font-size: clamp(18px, 4vw, 24px);
   }
 
   .lessons__subtitle {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .lessons__header {
-      padding: 8px;
+    padding: 8px;
   }
 
   .lessons__header-title {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .modal__content {
-      padding: 30px 10px 10px; /* Збільшено верхній відступ */
-      max-width: 90%;
-      max-height: 80vh;
+    padding: 30px 10px 10px;
+    max-width: 90%;
+    max-height: 80vh;
   }
 
   .modal__title {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   .modal__description {
-      font-size: 12px;
+    font-size: 12px;
   }
 
   .modal__list li {
-      font-size: 10px;
-      padding-left: 20px;
+    font-size: 10px;
+    padding-left: 20px;
   }
 
   .modal__list li:before {
-      font-size: 16px;
+    font-size: 16px;
   }
 
   .modal__button {
-      font-size: 12px;
-      padding: 8px 30px;
+    font-size: 12px;
+    padding: 8px 30px;
   }
 
   .modal__label input {
-      font-size: 10px;
-      padding: 8px 15px;
+    font-size: 10px;
+    padding: 8px 15px;
   }
 
   .modal__label input::placeholder {
-      font-size: 10px;
+    font-size: 10px;
   }
 
   .modal__form-note {
-      font-size: 8px;
+    font-size: 8px;
   }
 
   .modal__close {
-      top: 10px;
-      right: 10px;
-      font-size: 18px;
-      padding: 2px 6px;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    padding: 2px 6px;
   }
 
   .modal__image-wrapper {
-      height: 120px;
+    height: 120px;
   }
 }

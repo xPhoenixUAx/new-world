@@ -106,12 +106,7 @@
   color: #000;
 }
 
-/* .icon {
-  width: 35px;
-  height: 35px;
-  background: url("/src/img/desk/why/1.svg") no-repeat right cover;
-  margin: 14px auto 0;
-} */
+
 
 @media (min-width: 1020px) and (max-width: 1199px) {
   .about-item:nth-child(1),

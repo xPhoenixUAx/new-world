@@ -19,7 +19,7 @@
   --second-family: "Inter", sans-serif;
   --third-family: "Lifehack", sans-serif;
   --fourth-family: "Inter", sans-serif;
-  /* font-size */
+
   --font-size-12: 12px;
   --font-size-14: 14px;
   --font-size-16: 16px;
@@ -51,7 +51,6 @@ h6 {
 body {
   font-family: var(--font-family);
 }
-
 
 .container {
   width: 100%;

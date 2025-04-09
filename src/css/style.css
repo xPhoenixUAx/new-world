@@ -1,18 +1,5 @@
 @import url(https://db.onlinewebfonts.com/c/4cb51508c4d40dca10e0b6904dff4d7e?family=Lifehack);
 @import "modern-normalize";
-/* @import url("./src/css/reset.css");
-@import url("./src/css/header.css");
-@import url("./src/css/counter.css");
-@import url("./src/css/contact.css");
-@import url("./src/css/footer.css");
-@import url("./src/css/testemonials.css");
-@import url("./src/css/main/about.css");
-@import url("./src/css/main/faq.css");
-@import url("./src/css/main/price.css");
-@import url("./src/css/main/services.css");
-@import url("./src/css/second/why.css");
-@import url("./src/css/second/how.css");
-@import url("./src/css/second/try.css"); */
 @import url("./main/hero.css");
 
 @font-face {
